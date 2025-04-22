@@ -4,253 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FantaPapa 2025</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    :root {
-      --primary: #800020;
-      --secondary: #FFD700;
-      --light: #f8f9fa;
-      --dark: #343a40;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      color: var(--dark);
-      background-color: var(--light);
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    header {
-      background-color: var(--primary);
-      color: white;
-      text-align: center;
-      padding: 40px 0;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
-      font-weight: 700;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      opacity: 0.9;
-    }
-
-    .countdown {
-      background-color: var(--secondary);
-      color: var(--dark);
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: bold;
-      margin-top: 15px;
-    }
-
-    .nav-tabs {
-      display: flex;
-      border-bottom: 1px solid #ddd;
+    /* Stili per i controlli di ordinamento */
+    .sorting-controls {
       margin-bottom: 20px;
-    }
-
-    .nav-tabs button {
-      background: none;
-      border: none;
-      padding: 15px 20px;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: 600;
-      color: #666;
-      border-bottom: 3px solid transparent;
-      transition: all 0.3s;
-    }
-
-    .nav-tabs button.active {
-      border-bottom: 3px solid var(--primary);
-      color: var(--primary);
-    }
-
-    .content-pane {
-      display: none;
-      animation: fadeIn 0.5s;
-    }
-
-    .content-pane.active {
-      display: block;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .cardinal-card {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      overflow: hidden;
-      background: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-      position: relative;
-      cursor: pointer;
-    }
-
-    .cardinal-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-
-    .cardinal-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .cardinal-card .info {
-      padding: 15px;
-    }
-
-    .cardinal-card h3 {
-      margin-top: 0;
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
-
-    .cardinal-card p {
-      margin: 5px 0;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    .stats {
       display: flex;
-      flex-wrap: wrap;
-      margin-top: 10px;
+      gap: 10px;
+      align-items: center;
     }
-
-    .stats span {
-      background-color: #eee;
-      padding: 3px 8px;
-      border-radius: 15px;
-      font-size: 0.8rem;
-      margin-right: 5px;
-      margin-bottom: 5px;
+    .sort-btn {
+      padding: 8px 16px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
     }
-
-    .google-form-button {
-      display: block;
-      width: 100%;
-      max-width: 500px;
-      margin: 30px auto;
-      padding: 15px 20px;
-      background-color: var(--primary);
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 600;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: all 0.3s;
+    .sort-btn:hover, .sort-btn.active {
+      background-color: #ddd;
     }
-
-    .google-form-button:hover {
-      background-color: #600018;
-      transform: translateY(-3px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-    }
-
-    .rules {
-      background-color: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    .rules h2 {
-      color: var(--primary);
-      border-bottom: 2px solid var(--primary);
-      padding-bottom: 10px;
-      margin-top: 0;
-    }
-
-    .teams {
-      background-color: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    .team-item {
-      padding: 15px;
-      border-bottom: 1px solid #eee;
-    }
-
-    .team-item:last-child {
-      border-bottom: none;
-    }
-
-    .team-name {
-      font-weight: 600;
-      font-size: 1.1rem;
-      margin-bottom: 5px;
-    }
-
-    .team-selection {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-    }
-
-    .team-cardinal {
-      background-color: #f1f1f1;
-      padding: 3px 10px;
-      border-radius: 15px;
-      font-size: 0.9rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 0;
-      margin-top: 50px;
-      background-color: var(--dark);
-      color: white;
-    }
-
-    @media (max-width: 768px) {
-      .card-container {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      }
-
-      .cardinal-card img {
-        height: 150px;
-      }
-
-      .cardinal-card h3 {
-        font-size: 1rem;
-      }
-
-      .cardinal-card p {
-        font-size: 0.8rem;
-      }
+    .sort-btn.active {
+      font-weight: bold;
     }
   </style>
 </head>
@@ -273,6 +48,15 @@
   <div id="cardinali" class="content-pane active">
     <h2>I Cardinali Papabili</h2>
     <p>Esplora i profili dei cardinali che potrebbero diventare il prossimo Papa. Clicca su una scheda per saperne di più.</p>
+
+    <!-- Controlli di ordinamento -->
+    <div class="sorting-controls">
+      <span>Ordina per:</span>
+      <button class="sort-btn active" data-sort="default">Default</button>
+      <button class="sort-btn" data-sort="nome">Nome (A-Z)</button>
+      <button class="sort-btn" data-sort="paese">Paese</button>
+      <button class="sort-btn" data-sort="continente">Continente</button>
+    </div>
 
     <div class="card-container" id="cardinali-container">
       <!-- Le schede dei cardinali saranno generate da JavaScript -->
@@ -362,16 +146,20 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const cardinaliContainer = document.getElementById('cardinali-container');
+    const sortButtons = document.querySelectorAll('.sort-btn');
 
-    // Popolamento delle schede dei cardinali usando i dati dal file esterno
-    cardinali.forEach(cardinale => {
+    // Variabile per conservare la copia dei dati originali
+    let cardinaliCopy = [...cardinali];
+
+    // Funzione per creare una card di cardinale
+    function createCardinalCard(cardinale) {
       const cardElement = document.createElement('div');
       cardElement.className = 'cardinal-card';
       cardElement.innerHTML = `
         <img src="${cardinale.imageUrl}" alt="${cardinale.nome}">
         <div class="info">
           <h3>${cardinale.nome}</h3>
-          <p>${cardinale.eta} anni</p>
+          <p>${cardinale.eta || calculateAge(cardinale.dataNascita)} anni</p>
           <p>${cardinale.paese}</p>
           <p>${cardinale.ruolo}</p>
           <div class="stats">
@@ -385,8 +173,73 @@
         window.open(cardinale.wikiUrl, '_blank');
       });
 
-      cardinaliContainer.appendChild(cardElement);
+      return cardElement;
+    }
+
+    // Funzione per calcolare l'età dai dati di nascita
+    function calculateAge(dataNascita) {
+      if (!dataNascita) return "N/A";
+
+      const [day, month, year] = dataNascita.split('/').map(Number);
+      const birthDate = new Date(year, month - 1, day);
+      const today = new Date();
+
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const m = today.getMonth() - birthDate.getMonth();
+
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+
+      return age;
+    }
+
+    // Funzione per ordinare e visualizzare i cardinali
+    function sortAndDisplayCardinali(sortKey) {
+      // Svuota il container
+      cardinaliContainer.innerHTML = '';
+
+      // Clona l'array originale per non modificarlo
+      const sortedCardinali = [...cardinaliCopy];
+
+      // Applica l'ordinamento in base alla chiave selezionata
+      switch(sortKey) {
+        case 'nome':
+          sortedCardinali.sort((a, b) => a.nome.localeCompare(b.nome));
+          break;
+        case 'paese':
+          sortedCardinali.sort((a, b) => a.paese.localeCompare(b.paese));
+          break;
+        case 'continente':
+          sortedCardinali.sort((a, b) => a.continente.localeCompare(b.continente));
+          break;
+        default:
+          // Lascia l'ordine originale
+          break;
+      }
+
+      // Crea e aggiungi le card per ogni cardinale
+      sortedCardinali.forEach(cardinale => {
+        cardinaliContainer.appendChild(createCardinalCard(cardinale));
+      });
+    }
+
+    // Gestisce i clic sui pulsanti di ordinamento
+    sortButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Rimuove la classe active da tutti i pulsanti
+        sortButtons.forEach(btn => btn.classList.remove('active'));
+        // Aggiunge la classe active al pulsante cliccato
+        this.classList.add('active');
+
+        // Ordina e visualizza i cardinali in base alla chiave selezionata
+        sortAndDisplayCardinali(this.getAttribute('data-sort'));
+      });
     });
+
+    // Salva una copia dei dati originali e mostra le card all'avvio
+    cardinaliCopy = [...cardinali];
+    sortAndDisplayCardinali('default');
 
     // Gestione della navigazione a schede
     const tabButtons = document.querySelectorAll('.tab-btn');
