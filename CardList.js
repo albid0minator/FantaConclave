@@ -66,7 +66,7 @@ const cardinali =[
         "ruolo": "Cardinale presbitero di Santa Maria della Salute a Primavalle, Arcivescovo metropolita di Toronto",
         "dataNomina": "07/12/2024",
         "continente": "America del Nord",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Francis_Leo_(cardinale)",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Francis_Leo",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Frank_Leo.jpg/250px-Frank_Leo.jpg"
     },
     {
@@ -246,7 +246,7 @@ const cardinali =[
         "ruolo": "Cardinale presbitero di San Marco in Agro Laurentino, Arcivescovo metropolita di Napoli",
         "dataNomina": "07/12/2024",
         "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Domenico_Battaglia_(arcivescovo)",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Domenico_Battaglia",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Don_Mimmo_Battaglia_pentecoste_2018_%28cropped%29.jpg"
     },
     {
@@ -478,16 +478,6 @@ const cardinali =[
         "continente": "America del Nord",
         "wikiUrl": "https://it.wikipedia.org/wiki/G%C3%A9rald_Cyprien_Lacroix",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Mouvaux_-_Cardinal_G%C3%A9rald_Cyprien_Lacroix_-_1_%28cropped%29.jpg/250px-Mouvaux_-_Cardinal_G%C3%A9rald_Cyprien_Lacroix_-_1_%28cropped%29.jpg"
-    },
-    {
-        "nome": "Luis Antonio Tagle",
-        "dataNascita": "21/06/1957",
-        "paese": "Filippine",
-        "ruolo": "Cardinale vescovo di San Felice da Cantalice a Centocelle, Pro-prefetto della sezione per la prima evangelizzazione e le nuove Chiese particolari del Dicastero per l'evangelizzazione",
-        "dataNomina": "24/11/2012",
-        "continente": "Asia",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Luis_Antonio_Tagle",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Cardinal_Luis_Antonio_Tagle_Sambuhay_2019.jpg/250px-Cardinal_Luis_Antonio_Tagle_Sambuhay_2019.jpg"
     },
     {
         "nome": "Fernando Natalio Chomalí Garib",
