@@ -178,6 +178,8 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Fernando_V%C3%A9rgez_Alzaga",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Fernando_V%C3%A9rgez_Alzaga%2C_posesi%C3%B3n_Cobo-Roma.jpg/500px-Fernando_V%C3%A9rgez_Alzaga%2C_posesi%C3%B3n_Cobo-Roma.jpg"
     },
+
+    //fino a qui
     {
         "nome": "Mykola Byčok",
         "dataNascita": "13/02/1980",

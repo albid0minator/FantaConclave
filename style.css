@@ -154,7 +154,7 @@ header p {
     max-width: 500px;
     margin: 30px auto;
     padding: 15px 20px;
-    background-color: var(--primary);
+    background-color: #d32f2f;
     color: white;
     text-align: center;
     text-decoration: none;
