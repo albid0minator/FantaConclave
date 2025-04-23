@@ -1,173 +1,173 @@
 const cardinalio =[
-    {
-        "id": 1,
-        "nome": "Luis Antonio Tagle",
-        "eta": 67,
-        "paese": "Filippine",
-        "ruolo": "Prefetto del Dicastero per l'Evangelizzazione",
-        "imageUrl": "/api/placeholder/400/320",
-        "continente": "Asia",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Luis_Antonio_Tagle"
-    },
-    {
-        "nome": "Mykola Byčok",
-        "dataNascita": "13/02/1980",
-        "paese": "Ucraina",
-        "ruolo": "Cardinale presbitero di Santa Sofia a Via Boccea, Eparca dei Santi Pietro e Paolo di Melbourne degli ucraini",
-        "dataNomina": "07/12/2024",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Mykola_By%C4%8Dok"
-    },
-    {
-        "nome": "Giorgio Marengo",
-        "dataNascita": "07/06/1974",
-        "paese": "Italia",
-        "ruolo": "Cardinale presbitero di San Giuda Taddeo Apostolo, Prefetto apostolico di Ulan Bator",
-        "dataNomina": "27/08/2022",
-        "continente": "Asia",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Giorgio_Marengo"
-    },
-    {
-        "nome": "Américo Manuel Alves Aguiar",
-        "dataNascita": "12/12/1973",
-        "paese": "Portogallo",
-        "ruolo": "Cardinale presbitero di Sant'Antonio da Padova in Via Merulana, Vescovo di Setúbal",
-        "dataNomina": "30/09/2023",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Am%C3%A9rico_Manuel_Alves_Aguiar"
-    },
-    {
-        "nome": "George Jacob Koovakad",
-        "dataNascita": "11/08/1973",
-        "paese": "India",
-        "ruolo": "Cardinale diacono di Sant'Antonio di Padova a Circonvallazione Appia, Prefetto del Dicastero per il dialogo interreligioso e organizzatore dei viaggi papali",
-        "dataNomina": "07/12/2024",
-        "continente": "Asia",
-        "wikiUrl": "https://it.wikipedia.org/wiki/George_Jacob_Koovakad"
-    },
-    {
-        "nome": "Rolandas Makrickas",
-        "dataNascita": "31/01/1972",
-        "paese": "Lituania",
-        "ruolo": "Cardinale diacono di Sant'Eustachio, Arciprete coadiutore della basilica di Santa Maria Maggiore",
-        "dataNomina": "07/12/2024",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Rolandas_Makrickas"
-    },
-    {
-        "nome": "Francis Leo",
-        "dataNascita": "30/06/1971",
-        "paese": "Canada",
-        "ruolo": "Cardinale presbitero di Santa Maria della Salute a Primavalle, Arcivescovo metropolita di Toronto",
-        "dataNomina": "07/12/2024",
-        "continente": "America del Nord",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Francis_Leo_(cardinale)"
-    },
-    {
-        "nome": "Baldassare Reina",
-        "dataNascita": "26/11/1970",
-        "paese": "Italia",
-        "ruolo": "Cardinale presbitero di Santa Maria Assunta e San Giuseppe a Primavalle, Vicario generale per la diocesi di Roma e arciprete della basilica di San Giovanni in Laterano",
-        "dataNomina": "07/12/2024",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Baldassare_Reina"
-    },
-    {
-        "nome": "François-Xavier Bustillo",
-        "dataNascita": "23/11/1968",
-        "paese": "Francia",
-        "ruolo": "Cardinale presbitero di Santa Maria Immacolata di Lourdes a Boccea, Vescovo di Ajaccio",
-        "dataNomina": "30/09/2023",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Fran%C3%A7ois-Xavier_Bustillo"
-    },
-    {
-        "nome": "Virgílio do Carmo da Silva",
-        "dataNascita": "27/11/1967",
-        "paese": "Timor Est",
-        "ruolo": "Cardinale presbitero di Sant'Alberto Magno, Arcivescovo metropolita di Dili",
-        "dataNomina": "27/08/2022",
-        "continente": "Asia",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Virg%C3%ADlio_do_Carmo_da_Silva"
-    },
-    {
-        "nome": "Paulo Cezar Costa",
-        "dataNascita": "20/07/1967",
-        "paese": "Brasile",
-        "ruolo": "Cardinale presbitero dei Santi Bonifacio e Alessio, Arcivescovo metropolita di Brasilia",
-        "dataNomina": "27/08/2022",
-        "continente": "America del Sud",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Paulo_Cezar_Costa"
-    },
-    {
-        "nome": "Dieudonné Nzapalainga",
-        "dataNascita": "14/03/1967",
-        "paese": "Rep. Centrafricana",
-        "ruolo": "Cardinale presbitero di Sant'Andrea della Valle, Arcivescovo metropolita di Bangui",
-        "dataNomina": "19/11/2016",
-        "continente": "Africa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Dieudonn%C3%A9_Nzapalainga"
-    },
-    {
-        "nome": "Roberto Repole",
-        "dataNascita": "29/01/1967",
-        "paese": "Italia",
-        "ruolo": "Cardinale presbitero di Gesù Divin Maestro alla Pineta Sacchetti, Arcivescovo metropolita di Torino e Vescovo di Susa",
-        "dataNomina": "07/12/2024",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Roberto_Repole"
-    },
-    {
-        "nome": "José Tolentino Calaça de Mendonça",
-        "dataNascita": "15/12/1965",
-        "paese": "Portogallo",
-        "ruolo": "Cardinale diacono dei Santi Domenico e Sisto, Prefetto del Dicastero per la cultura e l'educazione",
-        "dataNomina": "05/10/2019",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Jos%C3%A9_Tolentino_Cala%C3%A7a_de_Mendon%C3%A7a"
-    },
-    {
-        "nome": "Mauro Gambetti",
-        "dataNascita": "27/10/1965",
-        "paese": "Italia",
-        "ruolo": "Cardinale diacono del Santissimo Nome di Maria al Foro Traiano, Vicario generale per la Città del Vaticano, arciprete della basilica di San Pietro in Vaticano e presidente della Fabbrica di San Pietro",
-        "dataNomina": "28/11/2020",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Mauro_Gambetti"
-    },
-    {
-        "nome": "José Cobo Cano",
-        "dataNascita": "20/09/1965",
-        "paese": "Spagna",
-        "ruolo": "Cardinale presbitero di Santa Maria in Monserrato degli Spagnoli, Arcivescovo metropolita di Madrid",
-        "dataNomina": "30/09/2023",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Jos%C3%A9_Cobo_Cano"
-    },
-    {
-        "nome": "Pierbattista Pizzaballa",
-        "dataNascita": "21/04/1965",
-        "paese": "Italia",
-        "ruolo": "Cardinale presbitero di Sant'Onofrio, Patriarca di Gerusalemme dei Latini",
-        "dataNomina": "30/09/2023",
-        "continente": "Asia",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Pierbattista_Pizzaballa"
-    },
-    {
-        "nome": "Fabio Baggio",
-        "dataNascita": "15/01/1965",
-        "paese": "Italia",
-        "ruolo": "Cardinale diacono di San Filippo Neri in Eurosia, Sottosegretario del Dicastero per il servizio dello sviluppo umano integrale",
-        "dataNomina": "07/12/2024",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Fabio_Baggio"
-    },
-    {
-        "nome": "Augusto Paolo Lojudice",
-        "dataNascita": "01/07/1964",
-        "paese": "Italia",
-        "ruolo": "Cardinale presbitero di Santa Maria del Buon Consiglio, Arcivescovo metropolita di Siena-Colle di Val d'Elsa-Montalcino e Vescovo di Montepulciano-Chiusi-Pienza",
-        "dataNomina": "28/11/2020",
+        {
+            "id": 1,
+            "nome": "Luis Antonio Tagle",
+            "eta": 67,
+            "paese": "Filippine",
+            "ruolo": "Prefetto del Dicastero per l'Evangelizzazione",
+            "imageUrl": "/api/placeholder/400/320",
+            "continente": "Asia",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Luis_Antonio_Tagle"
+        },
+        {
+            "nome": "Mykola Byčok",
+            "dataNascita": "13/02/1980",
+            "paese": "Ucraina",
+            "ruolo": "Cardinale presbitero di Santa Sofia a Via Boccea, Eparca dei Santi Pietro e Paolo di Melbourne degli ucraini",
+            "dataNomina": "07/12/2024",
+            "continente": "Europa",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Mykola_By%C4%8Dok"
+        },
+        {
+            "nome": "Giorgio Marengo",
+            "dataNascita": "07/06/1974",
+            "paese": "Italia",
+            "ruolo": "Cardinale presbitero di San Giuda Taddeo Apostolo, Prefetto apostolico di Ulan Bator",
+            "dataNomina": "27/08/2022",
+            "continente": "Asia",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Giorgio_Marengo"
+        },
+        {
+            "nome": "Américo Manuel Alves Aguiar",
+            "dataNascita": "12/12/1973",
+            "paese": "Portogallo",
+            "ruolo": "Cardinale presbitero di Sant'Antonio da Padova in Via Merulana, Vescovo di Setúbal",
+            "dataNomina": "30/09/2023",
+            "continente": "Europa",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Am%C3%A9rico_Manuel_Alves_Aguiar"
+        },
+        {
+            "nome": "George Jacob Koovakad",
+            "dataNascita": "11/08/1973",
+            "paese": "India",
+            "ruolo": "Cardinale diacono di Sant'Antonio di Padova a Circonvallazione Appia, Prefetto del Dicastero per il dialogo interreligioso e organizzatore dei viaggi papali",
+            "dataNomina": "07/12/2024",
+            "continente": "Asia",
+            "wikiUrl": "https://it.wikipedia.org/wiki/George_Jacob_Koovakad"
+        },
+        {
+            "nome": "Rolandas Makrickas",
+            "dataNascita": "31/01/1972",
+            "paese": "Lituania",
+            "ruolo": "Cardinale diacono di Sant'Eustachio, Arciprete coadiutore della basilica di Santa Maria Maggiore",
+            "dataNomina": "07/12/2024",
+            "continente": "Europa",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Rolandas_Makrickas"
+        },
+        {
+            "nome": "Francis Leo",
+            "dataNascita": "30/06/1971",
+            "paese": "Canada",
+            "ruolo": "Cardinale presbitero di Santa Maria della Salute a Primavalle, Arcivescovo metropolita di Toronto",
+            "dataNomina": "07/12/2024",
+            "continente": "America del Nord",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Francis_Leo_(cardinale)"
+        },
+        {
+            "nome": "Baldassare Reina",
+            "dataNascita": "26/11/1970",
+            "paese": "Italia",
+            "ruolo": "Cardinale presbitero di Santa Maria Assunta e San Giuseppe a Primavalle, Vicario generale per la diocesi di Roma e arciprete della basilica di San Giovanni in Laterano",
+            "dataNomina": "07/12/2024",
+            "continente": "Europa",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Baldassare_Reina"
+        },
+        {
+            "nome": "François-Xavier Bustillo",
+            "dataNascita": "23/11/1968",
+            "paese": "Francia",
+            "ruolo": "Cardinale presbitero di Santa Maria Immacolata di Lourdes a Boccea, Vescovo di Ajaccio",
+            "dataNomina": "30/09/2023",
+            "continente": "Europa",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Fran%C3%A7ois-Xavier_Bustillo"
+        },
+        {
+            "nome": "Virgílio do Carmo da Silva",
+            "dataNascita": "27/11/1967",
+            "paese": "Timor Est",
+            "ruolo": "Cardinale presbitero di Sant'Alberto Magno, Arcivescovo metropolita di Dili",
+            "dataNomina": "27/08/2022",
+            "continente": "Asia",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Virg%C3%ADlio_do_Carmo_da_Silva"
+        },
+        {
+            "nome": "Paulo Cezar Costa",
+            "dataNascita": "20/07/1967",
+            "paese": "Brasile",
+            "ruolo": "Cardinale presbitero dei Santi Bonifacio e Alessio, Arcivescovo metropolita di Brasilia",
+            "dataNomina": "27/08/2022",
+            "continente": "America del Sud",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Paulo_Cezar_Costa"
+        },
+        {
+            "nome": "Dieudonné Nzapalainga",
+            "dataNascita": "14/03/1967",
+            "paese": "Rep. Centrafricana",
+            "ruolo": "Cardinale presbitero di Sant'Andrea della Valle, Arcivescovo metropolita di Bangui",
+            "dataNomina": "19/11/2016",
+            "continente": "Africa",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Dieudonn%C3%A9_Nzapalainga"
+        },
+        {
+            "nome": "Roberto Repole",
+            "dataNascita": "29/01/1967",
+            "paese": "Italia",
+            "ruolo": "Cardinale presbitero di Gesù Divin Maestro alla Pineta Sacchetti, Arcivescovo metropolita di Torino e Vescovo di Susa",
+            "dataNomina": "07/12/2024",
+            "continente": "Europa",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Roberto_Repole"
+        },
+        {
+            "nome": "José Tolentino Calaça de Mendonça",
+            "dataNascita": "15/12/1965",
+            "paese": "Portogallo",
+            "ruolo": "Cardinale diacono dei Santi Domenico e Sisto, Prefetto del Dicastero per la cultura e l'educazione",
+            "dataNomina": "05/10/2019",
+            "continente": "Europa",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Jos%C3%A9_Tolentino_Cala%C3%A7a_de_Mendon%C3%A7a"
+        },
+        {
+            "nome": "Mauro Gambetti",
+            "dataNascita": "27/10/1965",
+            "paese": "Italia",
+            "ruolo": "Cardinale diacono del Santissimo Nome di Maria al Foro Traiano, Vicario generale per la Città del Vaticano, arciprete della basilica di San Pietro in Vaticano e presidente della Fabbrica di San Pietro",
+            "dataNomina": "28/11/2020",
+            "continente": "Europa",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Mauro_Gambetti"
+        },
+        {
+            "nome": "José Cobo Cano",
+            "dataNascita": "20/09/1965",
+            "paese": "Spagna",
+            "ruolo": "Cardinale presbitero di Santa Maria in Monserrato degli Spagnoli, Arcivescovo metropolita di Madrid",
+            "dataNomina": "30/09/2023",
+            "continente": "Europa",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Jos%C3%A9_Cobo_Cano"
+        },
+        {
+            "nome": "Pierbattista Pizzaballa",
+            "dataNascita": "21/04/1965",
+            "paese": "Italia",
+            "ruolo": "Cardinale presbitero di Sant'Onofrio, Patriarca di Gerusalemme dei Latini",
+            "dataNomina": "30/09/2023",
+            "continente": "Asia",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Pierbattista_Pizzaballa"
+        },
+        {
+            "nome": "Fabio Baggio",
+            "dataNascita": "15/01/1965",
+            "paese": "Italia",
+            "ruolo": "Cardinale diacono di San Filippo Neri in Eurosia, Sottosegretario del Dicastero per il servizio dello sviluppo umano integrale",
+            "dataNomina": "07/12/2024",
+            "continente": "Europa",
+            "wikiUrl": "https://it.wikipedia.org/wiki/Fabio_Baggio"
+        },
+        {
+            "nome": "Augusto Paolo Lojudice",
+            "dataNascita": "01/07/1964",
+            "paese": "Italia",
+            "ruolo": "Cardinale presbitero di Santa Maria del Buon Consiglio, Arcivescovo metropolita di Siena-Colle di Val d'Elsa-Montalcino e Vescovo di Montepulciano-Chiusi-Pienza",
+            "dataNomina": "28/11/2020",
         "continente": "Europa",
         "wikiUrl": "https://it.wikipedia.org/wiki/Augusto_Paolo_Lojudice"
     },
