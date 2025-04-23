@@ -1,5 +1,34 @@
 const cardinali =[
     {
+        "nome": "Pierbattista Pizzaballa",
+        "dataNascita": "21/04/1965",
+        "paese": "Italia",
+        "ruolo": "Cardinale presbitero di Sant'Onofrio, Patriarca di Gerusalemme dei Latini",
+        "dataNomina": "30/09/2023",
+        "continente": "Asia",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Pierbattista_Pizzaballa",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mons._Pierbattista_Pizzaballa.jpg/250px-Mons._Pierbattista_Pizzaballa.jpg"
+    },
+    {
+        "nome": "Fridolin Ambongo Besungu",
+        "dataNascita": "24/01/1960",
+        "paese": "RD del Congo",
+        "ruolo": "Cardinale presbitero di San Gabriele Arcangelo all'Acqua Traversa, Arcivescovo metropolita di Kinshasa",
+        "dataNomina": "05/10/2019",
+        "continente": "Africa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Fridolin_Ambongo_Besungu",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/AED_11%C3%A8me_Nuit_des_T%C3%A9moins_-_Fridolin_Ambongo_-_2_%28cropped%29.jpg/250px-AED_11%C3%A8me_Nuit_des_T%C3%A9moins_-_Fridolin_Ambongo_-_2_%28cropped%29.jpg"
+    },
+    {
+        "nome": "Jean-Claude Hollerich",
+        "dataNascita": "09/08/1958",
+        "paese": "Lussemburgo",
+        "ruolo": "Cardinale presbitero di San Giovanni Crisostomo a Monte Sacro Alto, Arcivescovo di Lussemburgo",
+        "dataNomina": "05/10/2019",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Jean-Claude_Hollerich",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Jean-Claude_Hollerich.jpg/250px-Jean-Claude_Hollerich.jpg"
+    },{
         "id": 1,
         "nome": "Luis Antonio Tagle",
         "eta": 67,
@@ -8,6 +37,146 @@ const cardinali =[
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Cardinal_Luis_Antonio_Tagle_Sambuhay_2019.jpg/250px-Cardinal_Luis_Antonio_Tagle_Sambuhay_2019.jpg",
         "continente": "Asia",
         "wikiUrl": "https://it.wikipedia.org/wiki/Luis_Antonio_Tagle"
+    },
+    {
+        "nome": "Matteo Maria Zuppi",
+        "dataNascita": "11/10/1955",
+        "paese": "Italia",
+        "ruolo": "Cardinale presbitero di Sant'Egidio, Arcivescovo metropolita di Bologna",
+        "dataNomina": "05/10/2019",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Matteo_Maria_Zuppi",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Matteo_Zuppi_2019.jpg/250px-Matteo_Zuppi_2019.jpg"
+    },
+    {
+        "nome": "Pietro Parolin",
+        "dataNascita": "17/01/1955",
+        "paese": "Italia",
+        "ruolo": "Cardinale vescovo dei Santi Simone e Giuda Taddeo a Torre Angela, Cardinale segretario di Stato",
+        "dataNomina": "22/02/2014",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Pietro_Parolin",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/In%C4%81ra_M%C5%ABrniece_tiekas_ar_Sv%C4%93t%C4%81_Kr%C4%93sla_Valsts_sekret%C4%81ru_%2826363562894%29-1%28cropped%29.jpg/250px-In%C4%81ra_M%C5%ABrniece_tiekas_ar_Sv%C4%93t%C4%81_Kr%C4%93sla_Valsts_sekret%C4%81ru_%2826363562894%29-1%28cropped%29.jpg"
+    },
+    {
+        "nome": "Willem Jacobus Eĳk",
+        "dataNascita": "22/06/1953",
+        "paese": "Paesi Bassi",
+        "ruolo": "Cardinale presbitero di San Callisto, Arcivescovo metropolita di Utrecht",
+        "dataNomina": "18/02/2012",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Willem_Jacobus_Eijk",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Willem_Eijk_%282020%29.jpg/250px-Willem_Eijk_%282020%29.jpg"
+    },
+    {
+        "nome": "Péter Erdő",
+        "dataNascita": "25/06/1952",
+        "paese": "Ungheria",
+        "ruolo": "Cardinale presbitero di Santa Maria Nuova, Arcivescovo metropolita di Esztergom-Budapest",
+        "dataNomina": "21/10/2003",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/P%C3%A9ter_Erd%C5%91",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/P%C3%A9ter_Erd%C5%91_in_2011.jpg/250px-P%C3%A9ter_Erd%C5%91_in_2011.jpg"
+    },
+    {
+        "nome": "Dominique Mamberti",
+        "dataNascita": "07/03/1952",
+        "paese": "Francia",
+        "ruolo": "Cardinale diacono di Santo Spirito in Sassia, Prefetto del Supremo tribunale della Segnatura apostolica e Cardinale protodiacono",
+        "dataNomina": "14/02/2015",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Dominique_Mamberti",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Dominique_Mamberti%2C_14_Dec_2010.jpg/250px-Dominique_Mamberti%2C_14_Dec_2010.jpg"
+    },
+    {
+        "nome": "Carlos Aguiar Retes",
+        "dataNascita": "09/01/1950",
+        "paese": "Messico",
+        "ruolo": "Cardinale presbitero dei Santi Fabiano e Venanzio a Villa Fiorelli, Arcivescovo metropolita di Città del Messico",
+        "dataNomina": "19/11/2016",
+        "continente": "America del Nord",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Carlos_Aguiar_Retes",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Cardenalaguiar.jpg/330px-Cardenalaguiar.jpg"
+    },
+    {
+        "nome": "Anders Arborelius",
+        "dataNascita": "24/09/1949",
+        "paese": "Svezia",
+        "ruolo": "Cardinale presbitero di Santa Maria degli Angeli, Vescovo di Stoccolma",
+        "dataNomina": "28/06/2017",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Anders_Arborelius",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Anders_Arborelius_in_2019.jpg/250px-Anders_Arborelius_in_2019.jpg"
+    },
+    {
+        "nome": "Blase Joseph Cupich",
+        "dataNascita": "19/03/1949",
+        "paese": "Stati Uniti",
+        "ruolo": "Cardinale presbitero di San Bartolomeo all'Isola, Arcivescovo metropolita di Chicago",
+        "dataNomina": "19/11/2016",
+        "continente": "America del Nord",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Blase_Joseph_Cupich",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Cdl._Cupich_%28cropped%29.png/250px-Cdl._Cupich_%28cropped%29.png"
+    },
+    {
+        "nome": "Peter Kodwo Appiah Turkson",
+        "dataNascita": "11/10/1948",
+        "paese": "Ghana",
+        "ruolo": "Cardinale presbitero di San Liborio, Cancelliere della Pontificia accademia delle scienze e della Pontificia accademia delle scienze sociali",
+        "dataNomina": "21/10/2003",
+        "continente": "Africa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Peter_Kodwo_Appiah_Turkson",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Peter_Turkson_%28cropped%29.jpg/250px-Peter_Turkson_%28cropped%29.jpg"
+    },
+    {
+        "nome": "Charles Maung Bo",
+        "dataNascita": "29/10/1948",
+        "paese": "Birmania",
+        "ruolo": "Cardinale presbitero di Sant'Ireneo a Centocelle, Arcivescovo metropolita di Yangon",
+        "dataNomina": "14/02/2015",
+        "continente": "Asia",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Charles_Maung_Bo",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Maung_Bo.jpg/330px-Maung_Bo.jpg"
+    },
+    {
+        "nome": "Albert Malcolm Ranjith Patabendige Don",
+        "dataNascita": "15/11/1947",
+        "paese": "Sri Lanka",
+        "ruolo": "Cardinale presbitero di San Lorenzo in Lucina, Arcivescovo metropolita di Colombo",
+        "dataNomina": "20/11/2010",
+        "continente": "Asia",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Albert_Malcolm_Ranjith_Patabendige_Don",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Cardinal_Ranjith.jpg/250px-Cardinal_Ranjith.jpg"
+    },
+    {
+        "nome": "Wilton Daniel Gregory",
+        "dataNascita": "07/12/1947",
+        "paese": "Stati Uniti",
+        "ruolo": "Cardinale presbitero dell'Immacolata Concezione di Maria a Grottarossa, Arcivescovo emerito di Washington",
+        "dataNomina": "28/11/2020",
+        "continente": "America del Nord",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Wilton_Daniel_Gregory",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cardinal_Wilton_Daniel_Gregory_in_2024_%28cropped%29.jpg/250px-Cardinal_Wilton_Daniel_Gregory_in_2024_%28cropped%29.jpg"
+    },
+    {
+        "nome": "Giuseppe Betori",
+        "dataNascita": "25/02/1947",
+        "paese": "Italia",
+        "ruolo": "Cardinale presbitero di San Marcello, Arcivescovo emerito di Firenze",
+        "dataNomina": "18/02/2012",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Giuseppe_Betori",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Betori.JPG/250px-Betori.JPG"
+    },
+    {
+        "nome": "Fernando Vérgez Alzaga",
+        "dataNascita": "01/03/1945",
+        "paese": "Spagna",
+        "ruolo": "Cardinale diacono di Santa Maria della Mercede e Sant'Adriano a Villa Albani",
+        "dataNomina": "27/08/2022",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Fernando_V%C3%A9rgez_Alzaga",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Fernando_V%C3%A9rgez_Alzaga%2C_posesi%C3%B3n_Cobo-Roma.jpg/500px-Fernando_V%C3%A9rgez_Alzaga%2C_posesi%C3%B3n_Cobo-Roma.jpg"
     },
     {
         "nome": "Mykola Byčok",
@@ -159,16 +328,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Jos%C3%A9_Cobo_Cano",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Toma_posesi%C3%B3n_de_Jos%C3%A9_Cobo_de_Santa_Mar%C3%ADa_de_Montserrat%2C_Roma_03.jpg/250px-Toma_posesi%C3%B3n_de_Jos%C3%A9_Cobo_de_Santa_Mar%C3%ADa_de_Montserrat%2C_Roma_03.jpg"
     },
-    {
-        "nome": "Pierbattista Pizzaballa",
-        "dataNascita": "21/04/1965",
-        "paese": "Italia",
-        "ruolo": "Cardinale presbitero di Sant'Onofrio, Patriarca di Gerusalemme dei Latini",
-        "dataNomina": "30/09/2023",
-        "continente": "Asia",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Pierbattista_Pizzaballa",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mons._Pierbattista_Pizzaballa.jpg/250px-Mons._Pierbattista_Pizzaballa.jpg"
-    },
+
     {
         "nome": "Fabio Baggio",
         "dataNascita": "15/01/1965",
@@ -339,16 +499,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Protase_Rugambwa",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Rugambwa_Protase.jpg"
     },
-    {
-        "nome": "Fridolin Ambongo Besungu",
-        "dataNascita": "24/01/1960",
-        "paese": "RD del Congo",
-        "ruolo": "Cardinale presbitero di San Gabriele Arcangelo all'Acqua Traversa, Arcivescovo metropolita di Kinshasa",
-        "dataNomina": "05/10/2019",
-        "continente": "Africa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Fridolin_Ambongo_Besungu",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/AED_11%C3%A8me_Nuit_des_T%C3%A9moins_-_Fridolin_Ambongo_-_2_%28cropped%29.jpg/250px-AED_11%C3%A8me_Nuit_des_T%C3%A9moins_-_Fridolin_Ambongo_-_2_%28cropped%29.jpg"
-    },
+
     {
         "nome": "Sérgio da Rocha",
         "dataNascita": "21/10/1959",
@@ -449,16 +600,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/%C3%81ngel_Sixto_Rossi",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Arzobispo_Rossi_Cordoba.jpg/330px-Arzobispo_Rossi_Cordoba.jpg"
     },
-    {
-        "nome": "Jean-Claude Hollerich",
-        "dataNascita": "09/08/1958",
-        "paese": "Lussemburgo",
-        "ruolo": "Cardinale presbitero di San Giovanni Crisostomo a Monte Sacro Alto, Arcivescovo di Lussemburgo",
-        "dataNomina": "05/10/2019",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Jean-Claude_Hollerich",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Jean-Claude_Hollerich.jpg/250px-Jean-Claude_Hollerich.jpg"
-    },
+
     {
         "nome": "William Goh Seng Chye",
         "dataNascita": "25/06/1957",
@@ -549,16 +691,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Luis_Gerardo_Cabrera_Herrera",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/El_Cardenal_Cabrera_en_Azogues.jpg/250px-El_Cardenal_Cabrera_en_Azogues.jpg"
     },
-    {
-        "nome": "Matteo Maria Zuppi",
-        "dataNascita": "11/10/1955",
-        "paese": "Italia",
-        "ruolo": "Cardinale presbitero di Sant'Egidio, Arcivescovo metropolita di Bologna",
-        "dataNomina": "05/10/2019",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Matteo_Maria_Zuppi",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Matteo_Zuppi_2019.jpg/250px-Matteo_Zuppi_2019.jpg"
-    },
+
     {
         "nome": "Claudio Gugerotti",
         "dataNascita": "07/10/1955",
@@ -579,16 +712,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Robert_Francis_Prevost",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Mons._Robert_Prevost%2C_OSA_%28cropped%29.jpg/250px-Mons._Robert_Prevost%2C_OSA_%28cropped%29.jpg"
     },
-    {
-        "nome": "Pietro Parolin",
-        "dataNascita": "17/01/1955",
-        "paese": "Italia",
-        "ruolo": "Cardinale vescovo dei Santi Simone e Giuda Taddeo a Torre Angela, Cardinale segretario di Stato",
-        "dataNomina": "22/02/2014",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Pietro_Parolin",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/In%C4%81ra_M%C5%ABrniece_tiekas_ar_Sv%C4%93t%C4%81_Kr%C4%93sla_Valsts_sekret%C4%81ru_%2826363562894%29-1%28cropped%29.jpg/250px-In%C4%81ra_M%C5%ABrniece_tiekas_ar_Sv%C4%93t%C4%81_Kr%C4%93sla_Valsts_sekret%C4%81ru_%2826363562894%29-1%28cropped%29.jpg"
-    },
+
     {
         "nome": "Désiré Tsarahazana",
         "dataNascita": "13/06/1954",
@@ -629,16 +753,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Reinhard_Marx",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Marx_05-2009.jpg/250px-Marx_05-2009.jpg"
     },
-    {
-        "nome": "Willem Jacobus Eĳk",
-        "dataNascita": "22/06/1953",
-        "paese": "Paesi Bassi",
-        "ruolo": "Cardinale presbitero di San Callisto, Arcivescovo metropolita di Utrecht",
-        "dataNomina": "18/02/2012",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Willem_Jacobus_Eijk",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Willem_Eijk_%282020%29.jpg/250px-Willem_Eijk_%282020%29.jpg"
-    },
+
     {
         "nome": "Filipe Neri Ferrão",
         "dataNascita": "20/01/1953",
@@ -649,16 +764,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Filipe_Neri_Ferr%C3%A3o",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Filipe_Neri_Ferrao_%28cropped%29.jpg/250px-Filipe_Neri_Ferrao_%28cropped%29.jpg"
     },
-    {
-        "nome": "Péter Erdő",
-        "dataNascita": "25/06/1952",
-        "paese": "Ungheria",
-        "ruolo": "Cardinale presbitero di Santa Maria Nuova, Arcivescovo metropolita di Esztergom-Budapest",
-        "dataNomina": "21/10/2003",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/P%C3%A9ter_Erd%C5%91",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/P%C3%A9ter_Erd%C5%91_in_2011.jpg/250px-P%C3%A9ter_Erd%C5%91_in_2011.jpg"
-    },
+
     {
         "nome": "Vicente Bokalic Iglic",
         "dataNascita": "11/06/1952",
@@ -699,16 +805,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Jose_Fuerte_Advincula",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Portrait_of_Cardinal_Advincula.jpg/250px-Portrait_of_Cardinal_Advincula.jpg"
     },
-    {
-        "nome": "Dominique Mamberti",
-        "dataNascita": "07/03/1952",
-        "paese": "Francia",
-        "ruolo": "Cardinale diacono di Santo Spirito in Sassia, Prefetto del Supremo tribunale della Segnatura apostolica e Cardinale protodiacono",
-        "dataNomina": "14/02/2015",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Dominique_Mamberti",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Dominique_Mamberti%2C_14_Dec_2010.jpg/250px-Dominique_Mamberti%2C_14_Dec_2010.jpg"
-    },
+
     {
         "nome": "Lazarus You Heung-sik",
         "dataNascita": "17/11/1951",
@@ -839,16 +936,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Kazimierz_Nycz",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Kazimierz_Nycz_2014.jpg/250px-Kazimierz_Nycz_2014.jpg"
     },
-    {
-        "nome": "Carlos Aguiar Retes",
-        "dataNascita": "09/01/1950",
-        "paese": "Messico",
-        "ruolo": "Cardinale presbitero dei Santi Fabiano e Venanzio a Villa Fiorelli, Arcivescovo metropolita di Città del Messico",
-        "dataNomina": "19/11/2016",
-        "continente": "America del Nord",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Carlos_Aguiar_Retes",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Cardenalaguiar.jpg/330px-Cardenalaguiar.jpg"
-    },
+
     {
         "nome": "Arlindo Gomes Furtado",
         "dataNascita": "15/11/1949",
@@ -869,16 +957,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/James_Michael_Harvey",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/James_Cardinal_Harvey_%28cropped%29.JPG/250px-James_Cardinal_Harvey_%28cropped%29.JPG"
     },
-    {
-        "nome": "Anders Arborelius",
-        "dataNascita": "24/09/1949",
-        "paese": "Svezia",
-        "ruolo": "Cardinale presbitero di Santa Maria degli Angeli, Vescovo di Stoccolma",
-        "dataNomina": "28/06/2017",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Anders_Arborelius",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Anders_Arborelius_in_2019.jpg/250px-Anders_Arborelius_in_2019.jpg"
-    },
+
     {
         "nome": "Odilo Pedro Scherer",
         "dataNascita": "21/09/1949",
@@ -919,16 +998,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Josip_Bozani%C4%87",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/CardinalJosipBozani%C4%87.jpg/250px-CardinalJosipBozani%C4%87.jpg"
     },
-    {
-        "nome": "Blase Joseph Cupich",
-        "dataNascita": "19/03/1949",
-        "paese": "Stati Uniti",
-        "ruolo": "Cardinale presbitero di San Bartolomeo all'Isola, Arcivescovo metropolita di Chicago",
-        "dataNomina": "19/11/2016",
-        "continente": "America del Nord",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Blase_Joseph_Cupich",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Cdl._Cupich_%28cropped%29.png/250px-Cdl._Cupich_%28cropped%29.png"
-    },
+
     {
         "nome": "Leopoldo José Brenes Solórzano",
         "dataNascita": "07/03/1949",
@@ -959,26 +1029,8 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Jos%C3%A9_Francisco_Robles_Ortega",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/D._Francisco_Robles_Ortega_%28cropped%29.jpg/250px-D._Francisco_Robles_Ortega_%28cropped%29.jpg"
     },
-    {
-        "nome": "Charles Maung Bo",
-        "dataNascita": "29/10/1948",
-        "paese": "Birmania",
-        "ruolo": "Cardinale presbitero di Sant'Ireneo a Centocelle, Arcivescovo metropolita di Yangon",
-        "dataNomina": "14/02/2015",
-        "continente": "Asia",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Charles_Maung_Bo",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Maung_Bo.jpg/330px-Maung_Bo.jpg"
-    },
-    {
-        "nome": "Peter Kodwo Appiah Turkson",
-        "dataNascita": "11/10/1948",
-        "paese": "Ghana",
-        "ruolo": "Cardinale presbitero di San Liborio, Cancelliere della Pontificia accademia delle scienze e della Pontificia accademia delle scienze sociali",
-        "dataNomina": "21/10/2003",
-        "continente": "Africa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Peter_Kodwo_Appiah_Turkson",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Peter_Turkson_%28cropped%29.jpg/250px-Peter_Turkson_%28cropped%29.jpg"
-    },
+
+
     {
         "nome": "Giuseppe Petrocchi",
         "dataNascita": "19/08/1948",
@@ -1069,16 +1121,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Marcello_Semeraro",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Forum_cristiani_LGBT_-_Marcello_Semeraro_01_-_Cropped.jpg/250px-Forum_cristiani_LGBT_-_Marcello_Semeraro_01_-_Cropped.jpg"
     },
-    {
-        "nome": "Wilton Daniel Gregory",
-        "dataNascita": "07/12/1947",
-        "paese": "Stati Uniti",
-        "ruolo": "Cardinale presbitero dell'Immacolata Concezione di Maria a Grottarossa, Arcivescovo emerito di Washington",
-        "dataNomina": "28/11/2020",
-        "continente": "America del Nord",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Wilton_Daniel_Gregory",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cardinal_Wilton_Daniel_Gregory_in_2024_%28cropped%29.jpg/250px-Cardinal_Wilton_Daniel_Gregory_in_2024_%28cropped%29.jpg"
-    },
+
     {
         "nome": "Mario Aurelio Poli",
         "dataNascita": "29/11/1947",
@@ -1089,16 +1132,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Mario_Aurelio_Poli",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Mario_Aurelio_Cardinal_Poli_%28cropped%29.JPG/330px-Mario_Aurelio_Cardinal_Poli_%28cropped%29.JPG"
     },
-    {
-        "nome": "Albert Malcolm Ranjith Patabendige Don",
-        "dataNascita": "15/11/1947",
-        "paese": "Sri Lanka",
-        "ruolo": "Cardinale presbitero di San Lorenzo in Lucina, Arcivescovo metropolita di Colombo",
-        "dataNomina": "20/11/2010",
-        "continente": "Asia",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Albert_Malcolm_Ranjith_Patabendige_Don",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Cardinal_Ranjith.jpg/250px-Cardinal_Ranjith.jpg"
-    },
+
     {
         "nome": "Kevin Joseph Farrell",
         "dataNascita": "02/09/1947",
@@ -1149,16 +1183,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Jo%C3%A3o_Braz_de_Aviz",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Joao_braz_de_aviz.jpg/250px-Joao_braz_de_aviz.jpg"
     },
-    {
-        "nome": "Giuseppe Betori",
-        "dataNascita": "25/02/1947",
-        "paese": "Italia",
-        "ruolo": "Cardinale presbitero di San Marcello, Arcivescovo emerito di Firenze",
-        "dataNomina": "18/02/2012",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Giuseppe_Betori",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Betori.JPG/250px-Betori.JPG"
-    },
+
     {
         "nome": "Emil Paul Tscherrig",
         "dataNascita": "03/02/1947",
