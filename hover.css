@@ -1,0 +1,34 @@
+/* Stile per l'overlay "Clicca per info" sulle carte */
+.cardinal-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.info-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(128, 0, 32, 0.85); /* Usa il colore primario con trasparenza */
+    color: white;
+    text-align: center;
+    padding: 8px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.cardinal-card:hover .info-overlay {
+    transform: translateY(0);
+}
+
+/* Per dispositivi touch, mostra sempre l'overlay */
+@media (hover: none) {
+    .info-overlay {
+        transform: translateY(0);
+        background-color: rgba(128, 0, 32, 0.7);
+        font-size: 12px;
+        padding: 5px;
+    }
+}

@@ -6,21 +6,23 @@ document.addEventListener('DOMContentLoaded', function() {
     let cardinaliCopy = [...cardinali];
 
     // Funzione per creare una card di cardinale
+    // Funzione per creare una card di cardinale
     function createCardinalCard(cardinale) {
         const cardElement = document.createElement('div');
         cardElement.className = 'cardinal-card';
         cardElement.innerHTML = `
         <img src="${cardinale.imageUrl}" alt="${cardinale.nome}">
         <div class="info">
-          <h3>${cardinale.nome}</h3>
-          <p>${cardinale.eta || calculateAge(cardinale.dataNascita)} anni</p>
-          <p>${cardinale.paese}</p>
-          <p>${cardinale.ruolo}</p>
-          <div class="stats">
-            <span>${cardinale.continente}</span>
-          </div>
+      <h3>${cardinale.nome}</h3>
+      <p>${cardinale.eta || calculateAge(cardinale.dataNascita)} anni</p>
+      <p>${cardinale.paese}</p>
+      <p>${cardinale.ruolo}</p>
+      <div class="stats">
+        <span>${cardinale.continente}</span>
+      </div>
         </div>
-      `;
+        <div class="info-overlay">Clicca per maggiori informazioni</div>
+  `;
 
         // Aggiunta dell'evento per reindirizzare a Wikipedia quando si clicca sulla scheda
         cardElement.addEventListener('click', function() {
