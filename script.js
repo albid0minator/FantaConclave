@@ -110,4 +110,70 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById(tab).classList.add('active');
         });
     });
+
+// Gestione della ricerca
+    const searchInput = document.getElementById('search-input');
+    const searchButton = document.getElementById('search-button');
+
+// Funzione per filtrare i cardinali in base al testo di ricerca
+    function searchCardinali() {
+        const searchText = searchInput.value.toLowerCase();
+
+        // Se il campo di ricerca è vuoto, visualizza tutti i cardinali ordinati normalmente
+        if (searchText.trim() === '') {
+            // Trova il pulsante di ordinamento attivo e usa quel criterio
+            const activeButton = document.querySelector('.sort-btn.active');
+            sortAndDisplayCardinali(activeButton.getAttribute('data-sort'));
+            return;
+        }
+
+        // Clona l'array originale
+        const filteredCardinali = cardinaliCopy.filter(cardinale => {
+            // Cerca nel nome, paese, ruolo, continente
+            return cardinale.nome.toLowerCase().includes(searchText) ||
+                cardinale.paese.toLowerCase().includes(searchText) ||
+                cardinale.ruolo.toLowerCase().includes(searchText) ||
+                cardinale.continente.toLowerCase().includes(searchText);
+        });
+
+        // Svuota il container
+        cardinaliContainer.innerHTML = '';
+
+        // Se non ci sono risultati, mostra un messaggio
+        if (filteredCardinali.length === 0) {
+            cardinaliContainer.innerHTML = '<div class="no-results">Nessun cardinale trovato. Prova con una ricerca diversa.</div>';
+            return;
+        }
+
+        // Crea e aggiungi le card per ogni cardinale filtrato
+        filteredCardinali.forEach(cardinale => {
+            cardinaliContainer.appendChild(createCardinalCard(cardinale));
+        });
+    }
+
+// Gestisci il clic sul pulsante di ricerca
+    searchButton.addEventListener('click', searchCardinali);
+
+// Gestisci la ricerca quando si preme "Invio" nella barra di ricerca
+    searchInput.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            searchCardinali();
+        }
+    });
+
+// Resetta la ricerca quando si cancella il contenuto della barra
+    searchInput.addEventListener('input', function() {
+        if (this.value === '') {
+            // Trova il pulsante di ordinamento attivo e usa quel criterio
+            const activeButton = document.querySelector('.sort-btn.active');
+            sortAndDisplayCardinali(activeButton.getAttribute('data-sort'));
+        }
+    });
+
+
+
+
 });
+
+
+
