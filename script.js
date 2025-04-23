@@ -13,16 +13,17 @@ document.addEventListener('DOMContentLoaded', function() {
         cardElement.innerHTML = `
         <img src="${cardinale.imageUrl}" alt="${cardinale.nome}">
         <div class="info">
-      <h3>${cardinale.nome}</h3>
-      <p>${cardinale.eta || calculateAge(cardinale.dataNascita)} anni</p>
-      <p>${cardinale.paese}</p>
-      <p>${cardinale.ruolo}</p>
-      <div class="stats">
-        <span>${cardinale.continente}</span>
-      </div>
+            <h3>${cardinale.nome}</h3>
+            <p>${cardinale.eta || calculateAge(cardinale.dataNascita)} anni</p>
+            <p>${cardinale.paese}</p>
+            <p>${cardinale.ruolo}</p>
+            <div class="stats">
+                <span>${cardinale.continente}</span>
+                <span class="score-badge">${cardinale.punteggio || 0} pt</span>
+            </div>
         </div>
         <div class="info-overlay">Clicca per maggiori informazioni</div>
-  `;
+    `;
 
         // Aggiunta dell'evento per reindirizzare a Wikipedia quando si clicca sulla scheda
         cardElement.addEventListener('click', function() {
@@ -68,6 +69,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case 'continente':
                 sortedCardinali.sort((a, b) => a.continente.localeCompare(b.continente));
+                break;
+            case 'punteggio':
+                sortedCardinali.sort((a, b) => (b.punteggio || 0) - (a.punteggio || 0)); // Ordine decrescente
                 break;
             default:
                 // Lascia l'ordine originale

@@ -421,3 +421,17 @@ footer {
         width: 100%;
     }
 }
+
+.score-badge {
+    background-color: var(--secondary) !important;
+    color: var(--dark);
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+
+
