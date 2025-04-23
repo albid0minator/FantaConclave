@@ -185,7 +185,7 @@ cardinali=[
         "dataNomina": "20/11/2010",
         "continente": "Asia",
         "wikiUrl": "https://it.wikipedia.org/wiki/Albert_Malcolm_Ranjith_Patabendige_Don",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Cardinal_Ranjith.jpg/250px-Cardinal_Ranjith.jpg",
+        "imageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyYhpn3XPrr-jaebDKuGRC6YcN6TClYt-QzlXbyTRuoXxpDfQD0s_Bcf7TXFRCQl8_-Fiex3q6HWrj73LH7UyaLA",
         "punteggio": 18
     },
     {
@@ -220,5 +220,17 @@ cardinali=[
         "wikiUrl": "https://it.wikipedia.org/wiki/Fernando_V%C3%A9rgez_Alzaga",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Fernando_V%C3%A9rgez_Alzaga%2C_posesi%C3%B3n_Cobo-Roma.jpg/500px-Fernando_V%C3%A9rgez_Alzaga%2C_posesi%C3%B3n_Cobo-Roma.jpg",
         "punteggio": 15
+    },
+    {
+        "nome": "Mario Grech",
+        "dataNascita": "20/02/1957",
+        "paese": "Malta",
+        "ruolo": "Cardinale diacono dei Santi Cosma e Damiano, Segretario generale del Sinodo dei Vescovi",
+        "dataNomina": "28/11/2020",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Mario_Grech",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Cardinal_Mario_Grech.jpg/250px-Cardinal_Mario_Grech.jpg",
+        "punteggio": 15
     }
+
 ]
