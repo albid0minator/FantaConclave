@@ -107,13 +107,28 @@
   </div>
 </div>
 
-<div style="position: relative; width: 100%; overflow: hidden; padding-top: 75%;">
+<!-- Form container con versione desktop e mobile -->
+<div class="desktop-form-iframe" style="position: relative; width: 100%; overflow: hidden; padding-top: 75%;">
   <iframe
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
           src="https://docs.google.com/forms/d/e/1FAIpQLSee7tGjbVMF4UoncrOntlB_FmA56tyueCJlhqCptyXdR-B3iw/viewform?embedded=true">
     Caricamento...
   </iframe>
 </div>
+
+<!-- Alternativa per dispositivi mobili -->
+<div class="mobile-form-alternative">
+  <div class="container">
+    <div class="rules">
+      <h3>Compila il form per partecipare</h3>
+      <p>Su dispositivi mobili consigliamo di compilare il form in una finestra separata per una migliore esperienza.</p>
+      <a href="https://forms.gle/R79VwPcQbGHRUCnq7" target="_blank" class="google-form-button">
+        APRI IL FORM
+      </a>
+    </div>
+  </div>
+</div>
+
 <footer>
   <div class="container">
     <p>FantaPapa 2025 - Un gioco di previsione per l'elezione del nuovo Papa</p>
@@ -238,5 +253,27 @@
     });
   });
 </script>
+<script>
+  // Rileva se il dispositivo è mobile
+  document.addEventListener('DOMContentLoaded', function() {
+    // Controllo se il dispositivo è mobile (larghezza schermo inferiore a 768px)
+    function checkMobile() {
+      if (window.innerWidth <= 768) {
+        document.querySelector('.desktop-form-iframe').style.display = 'none';
+        document.querySelector('.mobile-form-alternative').style.display = 'block';
+      } else {
+        document.querySelector('.desktop-form-iframe').style.display = 'block';
+        document.querySelector('.mobile-form-alternative').style.display = 'none';
+      }
+    }
+
+    // Controlla all'avvio
+    checkMobile();
+
+    // Controlla quando la finestra viene ridimensionata
+    window.addEventListener('resize', checkMobile);
+  });
+</script>
+
 </body>
 </html>

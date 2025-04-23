@@ -150,7 +150,7 @@ header p {
 
 .google-form-button {
     display: block;
-    width: 100%;
+    width: 90%;
     max-width: 500px;
     margin: 30px auto;
     padding: 15px 20px;
@@ -228,7 +228,66 @@ footer {
     color: white;
 }
 
+.sorting-controls {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sort-btn {
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sort-btn:hover, .sort-btn.active {
+    background-color: #ddd;
+}
+
+.sort-btn.active {
+    font-weight: bold;
+}
+
+/* Regole per dispositivi mobili */
 @media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .nav-tabs {
+        flex-direction: column;
+        border-bottom: none;
+    }
+
+    .nav-tabs button {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
+    .nav-tabs button.active {
+        background-color: var(--primary);
+        color: white;
+        border-color: var(--primary);
+    }
+
     .card-container {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
@@ -244,25 +303,75 @@ footer {
     .cardinal-card p {
         font-size: 0.8rem;
     }
+
+    .google-form-button {
+        max-width: 100%;
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    .sorting-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sorting-controls span {
+        margin-bottom: 5px;
+    }
+
+    .team-selection {
+        flex-direction: column;
+    }
+
+    .team-cardinal {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    /* Miglioramento del comportamento dell'iframe su mobile */
+    div[style*="padding-top: 75%"] {
+        padding-top: 100%; /* Aumenta lo spazio verticale per il form su mobile */
+    }
+
+    /* Nascondi l'iframe su mobile e mostra un'alternativa */
+    .mobile-form-alternative {
+        display: block;
+    }
+
+    .desktop-form-iframe {
+        display: none;
+    }
 }
 
-.sorting-controls {
-    margin-bottom: 20px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
+/* Aggiunta di una media query per schermi ancora più piccoli */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .google-form-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .cardinal-card .info {
+        padding: 10px;
+    }
+
+    .rules, .teams {
+        padding: 15px;
+    }
 }
-.sort-btn {
-    padding: 8px 16px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+
+/* Visualizzazione per desktop predefinita per l'iframe e l'alternativa mobile */
+.mobile-form-alternative {
+    display: none;
 }
-.sort-btn:hover, .sort-btn.active {
-    background-color: #ddd;
-}
-.sort-btn.active {
-    font-weight: bold;
+
+.desktop-form-iframe {
+    display: block;
 }
