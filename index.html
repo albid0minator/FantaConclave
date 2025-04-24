@@ -25,6 +25,7 @@
 <div class="container">
   <div class="nav-tabs">
     <button class="tab-btn active" data-tab="cardinali">Cardinali Papabili</button>
+    <button class="tab-btn" data-tab="riserve">Cardinali di Riserva</button>
     <button class="tab-btn" data-tab="regolamento">Regolamento</button>
     <button class="tab-btn" data-tab="Bonusmalus">Bonus e Malus</button>
     <button class="tab-btn" data-tab="squadre">Squadre</button>
@@ -55,6 +56,33 @@
     </div>
 
 
+  </div>
+
+
+  <!-- Aggiungi questa nuova sezione dopo il div con id "cardinali" e prima del div con id "regolamento" -->
+  <div id="riserve" class="content-pane">
+    <h2>I Cardinali di Riserva</h2>
+    <p>Esplora i profili dei cardinali di riserva che potrebbero essere considerati nel prossimo Conclave. Clicca su una scheda per saperne di più.</p>
+
+    <!-- Barra di ricerca per i cardinali di riserva -->
+    <div class="search-container">
+      <input type="text" id="search-input-riserve" class="search-box" placeholder="Cerca per nome, paese, ruolo...">
+      <button id="search-button-riserve" class="search-button">Cerca</button>
+    </div>
+
+    <!-- Controlli di ordinamento -->
+    <div class="sorting-controls">
+      <span>Ordina per:</span>
+      <button class="sort-btn-riserve active" data-sort="default">Default</button>
+      <button class="sort-btn-riserve" data-sort="nome">Nome (A-Z)</button>
+      <button class="sort-btn-riserve" data-sort="paese">Paese</button>
+      <button class="sort-btn-riserve" data-sort="continente">Continente</button>
+      <button class="sort-btn-riserve" data-sort="punteggio">Punteggio</button>
+    </div>
+
+    <div class="card-container" id="riserve-container">
+      <!-- Le schede dei cardinali di riserva saranno generate da JavaScript -->
+    </div>
   </div>
 
   <div id="regolamento" class="content-pane">
@@ -312,7 +340,9 @@
 
 <!-- Carica il file con i dati dei cardinali -->
 <script src="CardLineari.js"></script>
+<script src="Riserve.js"></script>
 <script src="script.js"></script>
+
 <script>
   // Rileva se il dispositivo è mobile
   document.addEventListener('DOMContentLoaded', function() {
