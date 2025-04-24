@@ -231,6 +231,17 @@ cardinali=[
         "wikiUrl": "https://it.wikipedia.org/wiki/Mario_Grech",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Cardinal_Mario_Grech.jpg/250px-Cardinal_Mario_Grech.jpg",
         "punteggio": 15
-    }
+    },
+    {
+        "nome": "Robert Francis Prevost",
+        "dataNascita": "14/09/1955",
+        "paese": "Stati Uniti",
+        "ruolo": "Cardinale vescovo di Albano, Prefetto del Dicastero per i vescovi",
+        "dataNomina": "30/09/2023",
+        "continente": "America del Nord",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Robert_Francis_Prevost",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Mons._Robert_Prevost%2C_OSA_%28cropped%29.jpg/250px-Mons._Robert_Prevost%2C_OSA_%28cropped%29.jpg",
+        "punteggio": 15
+    },
 
 ]
