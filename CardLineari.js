@@ -251,8 +251,8 @@ cardinali=[
         "dataNomina": "30/09/2023",
         "continente": "Europa",
         "wikiUrl": "https://it.wikipedia.org/wiki/%C3%81ngel_Fern%C3%A1ndez_Artime",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/%C3%81ngel_Fern%C3%A1ndez_Artime_2023.jpg/250px-%C3%81ngel_Fern%C3%A1ndez_Artime_2023.jpg",
-        "punteggio": 30
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/%C3%81ngel_Fern%C3%A1ndez_Artime_%281960-%29%2C.jpg/250px-%C3%81ngel_Fern%C3%A1ndez_Artime_%281960-%29%2C.jpg",
+        "punteggio": 15
     },
     {
         "nome": "Robert Sarah",
@@ -262,8 +262,32 @@ cardinali=[
         "dataNomina": "20/11/2010",
         "continente": "Africa",
         "wikiUrl": "https://it.wikipedia.org/wiki/Robert_Sarah",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Cardinal_Robert_Sarah_%28cropped%29.JPG/250px-Cardinal_Robert_Sarah_%28cropped%29.JPG"
-    }
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Cardinal_Robert_Sarah_%28cropped%29.JPG/250px-Cardinal_Robert_Sarah_%28cropped%29.JPG",
+        "punteggio": 15
+
+    },
+    {
+        "nome": "Jean-Marc Aveline",
+        "dataNascita": "26/12/1958",
+        "paese": "Francia",
+        "ruolo": "Cardinale presbitero di Santa Maria ai Monti, Arcivescovo metropolita di Marsiglia",
+        "dataNomina": "27/08/2022",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Jean-Marc_Aveline",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Mgr_Jean-Marc_Aveline_par_Claude_Truong-Ngoc_juillet_2021.jpg/500px-Mgr_Jean-Marc_Aveline_par_Claude_Truong-Ngoc_juillet_2021.jpg",
+        "punteggio": 15
+    },
+    {
+        "nome": "Daniel Fernando Sturla Berhouet",
+        "dataNascita": "04/07/1959",
+        "paese": "Uruguay",
+        "ruolo": "Cardinale presbitero di Santa Galla, Arcivescovo metropolita di Montevideo",
+        "dataNomina": "14/02/2015",
+        "continente": "America del Sud",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Daniel_Fernando_Sturla_Berhouet",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Daniel_Sturla_en_Misa_0013.jpg/330px-Daniel_Sturla_en_Misa_0013.jpg",
+        "punteggio": 15
+    },
 
 
 ]
