@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>${cardinale.ruolo}</p>
             <div class="stats">
                 <span>${cardinale.continente}</span>
-                <span class="score-badge">${cardinale.punteggio || 0} pt</span>
+                <span class="score-badge">${cardinale.punteggio || 0} Vaticoin</span>
             </div>
         </div>
         <div class="info-overlay">Clicca per maggiori informazioni</div>
