@@ -253,6 +253,16 @@ cardinali=[
         "wikiUrl": "https://it.wikipedia.org/wiki/%C3%81ngel_Fern%C3%A1ndez_Artime",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/%C3%81ngel_Fern%C3%A1ndez_Artime_2023.jpg/250px-%C3%81ngel_Fern%C3%A1ndez_Artime_2023.jpg",
         "punteggio": 30
+    },
+    {
+        "nome": "Robert Sarah",
+        "dataNascita": "15/06/1945",
+        "paese": "Guinea",
+        "ruolo": "Cardinale presbitero pro hac vice di San Giovanni Bosco in via Tuscolana, Prefetto emerito della Congregazione per il culto divino e la disciplina dei sacramenti",
+        "dataNomina": "20/11/2010",
+        "continente": "Africa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Robert_Sarah",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Cardinal_Robert_Sarah_%28cropped%29.JPG/250px-Cardinal_Robert_Sarah_%28cropped%29.JPG"
     }
 
 
