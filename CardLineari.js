@@ -243,5 +243,17 @@ cardinali=[
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Mons._Robert_Prevost%2C_OSA_%28cropped%29.jpg/250px-Mons._Robert_Prevost%2C_OSA_%28cropped%29.jpg",
         "punteggio": 15
     },
+    {
+        "nome": "Ángel Fernández Artime",
+        "dataNascita": "21/08/1960",
+        "paese": "Spagna",
+        "ruolo": "Cardinale diacono di Santa Maria Ausiliatrice in Via Tuscolana, Pro-prefetto del Dicastero per gli Istituti di Vita Consacrata e le Società di Vita Apostolica",
+        "dataNomina": "30/09/2023",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/%C3%81ngel_Fern%C3%A1ndez_Artime",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/%C3%81ngel_Fern%C3%A1ndez_Artime_2023.jpg/250px-%C3%81ngel_Fern%C3%A1ndez_Artime_2023.jpg",
+        "punteggio": 30
+    }
+
 
 ]
