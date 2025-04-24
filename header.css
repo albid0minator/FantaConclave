@@ -4,3 +4,14 @@ header .author {
     margin-top: 5px;
     opacity: 0.8;
 }
+header .header-image {
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+
+header .header-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,39 @@
+/* Aggiungi questi stili al tuo file style.css */
+
+.rules h3 {
+    color: var(--primary);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.rules p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.rules strong {
+    font-weight: 700;
+}
+
+.rules ul, .rules ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.rules li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .rules h3 {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .rules p {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+    }
+}
