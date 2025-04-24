@@ -288,6 +288,27 @@ cardinali=[
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Daniel_Sturla_en_Misa_0013.jpg/330px-Daniel_Sturla_en_Misa_0013.jpg",
         "punteggio": 15
     },
-
+    {
+        "nome": "Thomas Aquino Manyo Maeda",
+        "dataNascita": "03/03/1949",
+        "paese": "Giappone",
+        "ruolo": "Cardinale presbitero di Santa Pudenziana, Arcivescovo metropolita di Osaka-Takamatsu",
+        "dataNomina": "28/06/2018",
+        "continente": "Asia",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Thomas_Aquino_Manyo_Maeda",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Archbishop_Thomas_Aquinas_Manyo_Maeda_in_2015.jpg/225px-Archbishop_Thomas_Aquinas_Manyo_Maeda_in_2015.jpg",
+        "punteggio": 15
+    },
+    {
+        "nome": "Leonardo Ulrich Steiner",
+        "dataNascita": "06/11/1950",
+        "paese": "Brasile",
+        "ruolo": "Cardinale presbitero di San Leonardo da Porto Maurizio ad Acilia, Arcivescovo metropolita di Manaus",
+        "dataNomina": "27/08/2022",
+        "continente": "America del Sud",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Leonardo_Ulrich_Steiner",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/CDH_-_Comiss%C3%A3o_de_Direitos_Humanos_e_Legisla%C3%A7%C3%A3o_Participativa_%2821412066008%29.jpg/250px-CDH_-_Comiss%C3%A3o_de_Direitos_Humanos_e_Legisla%C3%A7%C3%A3o_Participativa_%2821412066008%29.jpg",
+        "punteggio": 15
+    },
 
 ]
