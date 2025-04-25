@@ -1,11 +1,27 @@
+/* Stili comuni */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.social-badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Stili Telegram */
 .telegram-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 15px;
-    max-width: 300px;
-    margin: 20px auto;
+    width: 280px;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -17,6 +33,8 @@
     display: flex;
     align-items: center;
     margin-bottom: 12px;
+    width: 100%;
+    justify-content: center;
 }
 
 .telegram-icon {
@@ -62,4 +80,86 @@
 
 .telegram-button:hover {
     background-color: #1d4ed8;
+}
+
+/* Stili TikTok */
+.tiktok-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 280px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 2px solid #fe2c55;
+}
+
+.tiktok-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+    justify-content: center;
+}
+
+.tiktok-icon {
+    background-color: #000000;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 12px;
+}
+
+.tiktok-icon svg {
+    height: 20px;
+    width: 20px;
+    fill: white;
+}
+
+.tiktok-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fe2c55;
+}
+
+.tiktok-description {
+    text-align: center;
+    color: #4b5563;
+    margin-bottom: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.tiktok-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #fe2c55;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.tiktok-button:hover {
+    background-color: #e6264f;
+}
+
+/* Adattamento mobile */
+@media (max-width: 640px) {
+    .social-badges-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .telegram-container,
+    .tiktok-container {
+        width: 100%;
+        max-width: 280px;
+    }
 }
