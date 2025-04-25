@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="regolamento.css">
   <link rel="stylesheet" href="tg.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <link rel="stylesheet" href="grafico.css">
 
 </head>
 <body>
@@ -74,6 +76,7 @@
     <button class="tab-btn" data-tab="riserve">Cardinali di Riserva</button>
     <button class="tab-btn" data-tab="regolamento">Regolamento</button>
     <button class="tab-btn" data-tab="Bonusmalus">Bonus e Malus</button>
+    <button class="tab-btn" data-tab="Classifiche">Classifiche</button>
   </div>
 
   <div id="cardinali" class="content-pane active">
@@ -389,6 +392,19 @@
 
     </div>
   </div>
+  <div id="Classifiche" class="content-pane">
+    <h1>Grafico Conteggio Scelte</h1>
+
+    <div class="controls">
+      <button id="barChartBtn">Grafico a Barre</button>
+      <button id="pieChartBtn">Grafico a Torta</button>
+      <button id="horizontalBarBtn">Barre Orizzontali</button>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
 </div>
 
 <!-- Form container con versione desktop e mobile
@@ -425,29 +441,11 @@
 <script src="CardLineari.js"></script>
 <script src="Riserve.js"></script>
 <script src="script.js"></script>
+<script src="grafico.js"></script>
 
 
 <script>
-  /*
-  // Rileva se il dispositivo è mobile
-  document.addEventListener('DOMContentLoaded', function() {
-    // Controllo se il dispositivo è mobile (larghezza schermo inferiore a 768px)
-    function checkMobile() {
-      if (window.innerWidth <= 768) {
-        document.querySelector('.desktop-form-iframe').style.display = 'none';
-        document.querySelector('.mobile-form-alternative').style.display = 'block';
-      } else {
-        document.querySelector('.desktop-form-iframe').style.display = 'block';
-        document.querySelector('.mobile-form-alternative').style.display = 'none';
-      }
-    }
 
-    // Controlla all'avvio
-    checkMobile();
-
-    // Controlla quando la finestra viene ridimensionata
-    window.addEventListener('resize', checkMobile);
-  });*/
 </script>
 
 </body>
