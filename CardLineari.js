@@ -310,5 +310,84 @@ cardinali=[
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/CDH_-_Comiss%C3%A3o_de_Direitos_Humanos_e_Legisla%C3%A7%C3%A3o_Participativa_%2821412066008%29.jpg/250px-CDH_-_Comiss%C3%A3o_de_Direitos_Humanos_e_Legisla%C3%A7%C3%A3o_Participativa_%2821412066008%29.jpg",
         "punteggio": 7
     },
+    {
+        "nome": "Gerhard Ludwig Müller",
+        "dataNascita": "31/12/1947",
+        "paese": "Germania",
+        "ruolo": "Cardinale presbitero pro hac vice di Sant'Agnese in Agone, Prefetto emerito della Congregazione per la dottrina della fede",
+        "dataNomina": "22/02/2014",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Gerhard_Ludwig_M%C3%BCller",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/HY_Gerhard_Ludwig_M%C3%BCller.png/250px-HY_Gerhard_Ludwig_M%C3%BCller.png",
+        "punteggio": 7
+
+    },
+    {
+        "nome": "Mykola Byčok",
+        "dataNascita": "13/02/1980",
+        "paese": "Ucraina",
+        "ruolo": "Cardinale presbitero di Santa Sofia a Via Boccea, Eparca dei Santi Pietro e Paolo di Melbourne degli ucraini",
+        "dataNomina": "07/12/2024",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Mykola_By%C4%8Dok",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Mykola_Bychok%2C_CSsR.jpg/330px-Mykola_Bychok%2C_CSsR.jpg",
+        "punteggio": 7
+    },
+    {
+        "nome": "Giorgio Marengo",
+        "dataNascita": "07/06/1974",
+        "paese": "Italia",
+        "ruolo": "Cardinale presbitero di San Giuda Taddeo Apostolo, Prefetto apostolico di Ulan Bator",
+        "dataNomina": "27/08/2022",
+        "continente": "Asia",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Giorgio_Marengo",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Cardeal_marengo.jpg",
+        "punteggio": 7
+    },
+    {
+        "nome": "Raymond Leo Burke",
+        "dataNascita": "30/06/1948",
+        "paese": "Stati Uniti",
+        "ruolo": "Cardinale presbitero pro hac vice di Sant'Agata dei Goti, Patrono emerito del Sovrano Militare Ordine di Malta",
+        "dataNomina": "20/11/2010",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Raymond_Leo_Burke",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Raymond_Leo_Cardinal_Burke.JPG/250px-Raymond_Leo_Cardinal_Burke.JPG",
+        "punteggio": 7
+    },
+    {
+        "nome": "Domenico Battaglia",
+        "dataNascita": "20/01/1963",
+        "paese": "Italia",
+        "ruolo": "Cardinale presbitero di San Marco in Agro Laurentino, Arcivescovo metropolita di Napoli",
+        "dataNomina": "07/12/2024",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Domenico_Battaglia",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Don_Mimmo_Battaglia_pentecoste_2018_%28cropped%29.jpg",
+        "punteggio": 7
+    },
+    {
+        "nome": "Joseph William Tobin",
+        "dataNascita": "03/05/1952",
+        "paese": "Stati Uniti",
+        "ruolo": "Cardinale presbitero di Santa Maria delle Grazie a Via Trionfale, Arcivescovo metropolita di Newark",
+        "dataNomina": "19/11/2016",
+        "continente": "America del Nord",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Joseph_William_Tobin",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Cardinal_Tobin_%28cropped%29.jpg/250px-Cardinal_Tobin_%28cropped%29.jpg",
+        "punteggio": 7
+
+    },
+    {
+        "nome": "Roberto Repole",
+        "dataNascita": "29/01/1967",
+        "paese": "Italia",
+        "ruolo": "Cardinale presbitero di Gesù Divin Maestro alla Pineta Sacchetti, Arcivescovo metropolita di Torino e Vescovo di Susa",
+        "dataNomina": "07/12/2024",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Roberto_Repole",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Roberto_Repole.jpg/250px-Roberto_Repole.jpg",
+        "punteggio": 7
+    },
 
 ]

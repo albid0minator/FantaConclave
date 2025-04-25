@@ -4,16 +4,7 @@ const cardinali =[
 
 
     //fino a qui
-    {
-        "nome": "Mykola Byčok",
-        "dataNascita": "13/02/1980",
-        "paese": "Ucraina",
-        "ruolo": "Cardinale presbitero di Santa Sofia a Via Boccea, Eparca dei Santi Pietro e Paolo di Melbourne degli ucraini",
-        "dataNomina": "07/12/2024",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Mykola_By%C4%8Dok",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Mykola_Bychok%2C_CSsR.jpg/330px-Mykola_Bychok%2C_CSsR.jpg"
-    },
+
     {
         "nome": "Giorgio Marengo",
         "dataNascita": "07/06/1974",
@@ -96,16 +87,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Dieudonn%C3%A9_Nzapalainga",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Mgr_Dieudonn%C3%A9_Nzapalainga%2C_24_Dec_2013.jpg/250px-Mgr_Dieudonn%C3%A9_Nzapalainga%2C_24_Dec_2013.jpg"
     },
-    {
-        "nome": "Roberto Repole",
-        "dataNascita": "29/01/1967",
-        "paese": "Italia",
-        "ruolo": "Cardinale presbitero di Gesù Divin Maestro alla Pineta Sacchetti, Arcivescovo metropolita di Torino e Vescovo di Susa",
-        "dataNomina": "07/12/2024",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Roberto_Repole",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Roberto_Repole.jpg/250px-Roberto_Repole.jpg"
-    },
+
     {
         "nome": "José Tolentino Calaça de Mendonça",
         "dataNascita": "15/12/1965",
@@ -207,16 +189,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Peter_Ebere_Okpaleke",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Peter_Okpaleke.jpg/250px-Peter_Okpaleke.jpg"
     },
-    {
-        "nome": "Domenico Battaglia",
-        "dataNascita": "20/01/1963",
-        "paese": "Italia",
-        "ruolo": "Cardinale presbitero di San Marco in Agro Laurentino, Arcivescovo metropolita di Napoli",
-        "dataNomina": "07/12/2024",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Domenico_Battaglia",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Don_Mimmo_Battaglia_pentecoste_2018_%28cropped%29.jpg"
-    },
+
     {
         "nome": "Víctor Manuel Fernández",
         "dataNascita": "18/07/1962",
@@ -548,16 +521,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Crist%C3%B3bal_L%C3%B3pez_Romero",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Crist%C3%B3bal_L%C3%B3pez_Romero_1.jpg/250px-Crist%C3%B3bal_L%C3%B3pez_Romero_1.jpg"
     },
-    {
-        "nome": "Joseph William Tobin",
-        "dataNascita": "03/05/1952",
-        "paese": "Stati Uniti",
-        "ruolo": "Cardinale presbitero di Santa Maria delle Grazie a Via Trionfale, Arcivescovo metropolita di Newark",
-        "dataNomina": "19/11/2016",
-        "continente": "America del Nord",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Joseph_William_Tobin",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Cardinal_Tobin_%28cropped%29.jpg/250px-Cardinal_Tobin_%28cropped%29.jpg"
-    },
+
     {
         "nome": "Jose Fuerte Advincula",
         "dataNascita": "30/03/1952",
@@ -826,16 +790,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Louis_Rapha%C3%ABl_I_Sako",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Louis_Rapha%C3%ABl_I_Sako_November_2015.jpg/250px-Louis_Rapha%C3%ABl_I_Sako_November_2015.jpg"
     },
-    {
-        "nome": "Raymond Leo Burke",
-        "dataNascita": "30/06/1948",
-        "paese": "Stati Uniti",
-        "ruolo": "Cardinale presbitero pro hac vice di Sant'Agata dei Goti, Patrono emerito del Sovrano Militare Ordine di Malta",
-        "dataNomina": "20/11/2010",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Raymond_Leo_Burke",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Raymond_Leo_Cardinal_Burke.JPG/250px-Raymond_Leo_Cardinal_Burke.JPG"
-    },
+
     {
         "nome": "John Atcherley Dew",
         "dataNascita": "05/05/1948",
