@@ -119,16 +119,7 @@ const cardinali =[
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Toma_posesi%C3%B3n_de_Jos%C3%A9_Cobo_de_Santa_Mar%C3%ADa_de_Montserrat%2C_Roma_03.jpg/250px-Toma_posesi%C3%B3n_de_Jos%C3%A9_Cobo_de_Santa_Mar%C3%ADa_de_Montserrat%2C_Roma_03.jpg"
     },
 
-    {
-        "nome": "Fabio Baggio",
-        "dataNascita": "15/01/1965",
-        "paese": "Italia",
-        "ruolo": "Cardinale diacono di San Filippo Neri in Eurosia, Sottosegretario del Dicastero per il servizio dello sviluppo umano integrale",
-        "dataNomina": "07/12/2024",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Fabio_Baggio",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Fabio_Baggio-5-2-2019.jpg/330px-Fabio_Baggio-5-2-2019.jpg"
-    },
+
     {
         "nome": "Augusto Paolo Lojudice",
         "dataNascita": "01/07/1964",
@@ -833,16 +824,7 @@ const cardinali =[
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Mario_Aurelio_Cardinal_Poli_%28cropped%29.JPG/330px-Mario_Aurelio_Cardinal_Poli_%28cropped%29.JPG"
     },
 
-    {
-        "nome": "Kevin Joseph Farrell",
-        "dataNascita": "02/09/1947",
-        "paese": "Stati Uniti",
-        "ruolo": "Cardinale diacono di San Giuliano Martire, Prefetto del Dicastero per i laici, la famiglia e la vita, Camerlengo di Santa Romana Chiesa e presidente della Commissione di materie riservate",
-        "dataNomina": "19/11/2016",
-        "continente": "America del Nord",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Kevin_Joseph_Farrell",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Kevin_Joseph_Farrell_1.jpg/330px-Kevin_Joseph_Farrell_1.jpg"
-    },
+
     {
         "nome": "Álvaro Leonel Ramazzini Imeri",
         "dataNascita": "16/07/1947",

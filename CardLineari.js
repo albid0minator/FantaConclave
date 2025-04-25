@@ -400,5 +400,27 @@ cardinali=[
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/2025.02.22._Timothy_Radcliffe_OP_Warsaw_Poland_Photo_Mariusz_Kubik_01.JPG/250px-2025.02.22._Timothy_Radcliffe_OP_Warsaw_Poland_Photo_Mariusz_Kubik_01.JPG",
         "punteggio": 7
     },
+    {
+        "nome": "Kevin Joseph Farrell",
+        "dataNascita": "02/09/1947",
+        "paese": "Stati Uniti",
+        "ruolo": "Cardinale diacono di San Giuliano Martire, Prefetto del Dicastero per i laici, la famiglia e la vita, Camerlengo di Santa Romana Chiesa e presidente della Commissione di materie riservate",
+        "dataNomina": "19/11/2016",
+        "continente": "America del Nord",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Kevin_Joseph_Farrell",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Kevin_Joseph_Farrell_1.jpg/330px-Kevin_Joseph_Farrell_1.jpg",
+        "punteggio": 7
+    },
+    {
+        "nome": "Fabio Baggio",
+        "dataNascita": "15/01/1965",
+        "paese": "Italia",
+        "ruolo": "Cardinale diacono di San Filippo Neri in Eurosia, Sottosegretario del Dicastero per il servizio dello sviluppo umano integrale",
+        "dataNomina": "07/12/2024",
+        "continente": "Europa",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Fabio_Baggio",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Fabio_Baggio-5-2-2019.jpg/330px-Fabio_Baggio-5-2-2019.jpg",
+        "punteggio": 7
+    },
 
 ]
