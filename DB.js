@@ -1024,16 +1024,7 @@ const cardinali =[
         "wikiUrl": "https://it.wikipedia.org/wiki/Vinko_Pulji%C4%87",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Vinko_Puljic_June_2015_%2818760757238%29.jpg/250px-Vinko_Puljic_June_2015_%2818760757238%29.jpg"
     },
-    {
-        "nome": "Timothy Radcliffe",
-        "dataNascita": "22/08/1945",
-        "paese": "Regno Unito",
-        "ruolo": "Cardinale diacono dei Santissimi Nomi di Gesù e Maria in via Lata, Già Maestro generale dell'Ordine dei predicatori",
-        "dataNomina": "07/12/2024",
-        "continente": "Europa",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Timothy_Radcliffe",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/2025.02.22._Timothy_Radcliffe_OP_Warsaw_Poland_Photo_Mariusz_Kubik_01.JPG/250px-2025.02.22._Timothy_Radcliffe_OP_Warsaw_Poland_Photo_Mariusz_Kubik_01.JPG"
-    },
+
     {
         "nome": "Joseph Coutts",
         "dataNascita": "12/07/1945",
