@@ -30,7 +30,7 @@ const cardinaliRiserva = [
             "continente": "Europa",
             "wikiUrl": "https://it.wikipedia.org/wiki/Agostino_Marchetto",
             "imageUrl": "https://gfx.ilgiornaledivicenza.it/image/contentid/policy:1.9406218:1652421075/image.jpg?f=16x9&h=421&w=750&$p$f$h$w=597732e",
-            "punteggio": 9
+            "punteggio": 8
         },
         {
             "nome": "Mauro Piacenza",
@@ -52,7 +52,7 @@ const cardinaliRiserva = [
             "continente": "America meridionale",
             "wikiUrl": "https://it.wikipedia.org/wiki/Leonardo_Sandri",
             "imageUrl": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTWQzqtZRJb0fMMnIXOfT6iqYeY71uPjgxV3Ovz5vvOSbk8jtKinoSmeVapy_t4L-8BhS6yZ9rrNFhL6Tc",
-            "punteggio": 9
+            "punteggio": 7
         },
         {
             "nome": "José Luis Lacunza Maestrojuán",
@@ -63,7 +63,7 @@ const cardinaliRiserva = [
             "continente": "America settentrionale",
             "wikiUrl": "https://it.wikipedia.org/wiki/Jos%C3%A9_Luis_Lacunza_Maestroju%C3%A1n",
             "imageUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUePqOVC2T0DZSvGaEau5Ren4xBSBhRUvcrfLCAv5l53O78wELLexBg4XpSQlKQ6EID8zxKrJZ5iGM_zewRUvkAw",
-            "punteggio": 9
+            "punteggio": 8
         },
         {
         "nome": "John Tong Hon",
