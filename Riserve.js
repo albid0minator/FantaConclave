@@ -8,7 +8,7 @@ const cardinaliRiserva = [
             "continente": "Europa",
             "wikiUrl": "https://it.wikipedia.org/wiki/Angelo_Bagnasco",
             "imageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3TXv4msXY-Rbh48gwvvqgz2na-hmxjOe02citQ0G5_Nz3UgHo2MlcJKrKk_4I5bVpn0BtoAjeUEamXGPWmYLQuQ",
-            "punteggio": 7
+            "punteggio": 9
         },
         {
             "nome": "Christoph Schönborn",
@@ -19,7 +19,7 @@ const cardinaliRiserva = [
             "continente": "Europa",
             "wikiUrl": "https://it.wikipedia.org/wiki/Christoph_Sch%C3%B6nborn",
             "imageUrl": "https://www.ior.va/content/ior/it/governance/cardinale-christoph-schonborn/_jcr_content/m-left/textimage/image.img.jpg/1714644665403.jpg",
-            "punteggio": 7
+            "punteggio": 9
         },
         {
             "nome": "Agostino Marchetto",
