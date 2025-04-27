@@ -461,7 +461,109 @@
 <script src="Riserve.js"></script>
 <script src="script.js"></script>
 <script src="grafico.js"></script>
+<script> // Script per tentare l'autoplay audio automatico quando si carica la pagina
+document.addEventListener('DOMContentLoaded', function() {
+    // Creazione dell'elemento audio
+    const audioElement = document.createElement('audio');
 
+    // Imposta l'attributo src con il percorso del file audio
+    audioElement.src = 'Python/audio5.mp3';
+
+    // Imposta gli attributi per il loop e l'autoplay
+    audioElement.loop = true;
+    audioElement.autoplay = true;
+
+    // Aggiungi l'elemento audio al body (può essere nascosto)
+    audioElement.style.display = 'none';
+    document.body.appendChild(audioElement);
+
+    // Strategia 1: Tentativo standard di autoplay
+    const playPromise = audioElement.play();
+
+    if (playPromise !== undefined) {
+        playPromise.then(_ => {
+            // Autoplay iniziato con successo
+            console.log("Autoplay riuscito!");
+        }).catch(error => {
+            // Autoplay è stato impedito
+            console.log("Autoplay bloccato dal browser:", error);
+
+            // Strategia 2: Tentativo basato su evento utente
+            setupAutoplayOnUserInteraction(audioElement);
+        });
+    }
+});
+
+// Funzione per impostare l'autoplay sul primo evento di interazione utente
+function setupAutoplayOnUserInteraction(audioElement) {
+    // Lista di eventi di interazione comuni
+    const userInteractionEvents = [
+        'click', 'touchstart', 'touchend',
+        'mousedown', 'keydown', 'scroll'
+    ];
+
+    // Handler per avviare l'audio e rimuovere tutti gli event listener
+    const interactionHandler = function() {
+        audioElement.play()
+            .then(() => {
+                console.log("Audio avviato dopo interazione utente");
+                // Rimuovi tutti gli event listener dopo il successo
+                userInteractionEvents.forEach(event => {
+                    document.removeEventListener(event, interactionHandler);
+                });
+            })
+            .catch(error => {
+                console.log("Impossibile avviare l'audio anche dopo interazione:", error);
+            });
+    };
+
+    // Aggiungi gli event listener per tutti gli eventi di interazione
+    userInteractionEvents.forEach(event => {
+        document.addEventListener(event, interactionHandler, { once: true });
+    });
+
+    // Aggiungi anche un piccolo pulsante invisibile che potrebbe aiutare
+    const invisibleButton = document.createElement('button');
+    invisibleButton.style.position = 'fixed';
+    invisibleButton.style.opacity = '0.1'; // quasi invisibile
+    invisibleButton.style.width = '100vw';
+    invisibleButton.style.height = '100vh';
+    invisibleButton.style.top = '0';
+    invisibleButton.style.left = '0';
+    invisibleButton.style.zIndex = '1000';
+    invisibleButton.style.cursor = 'default';
+    invisibleButton.style.border = 'none';
+    invisibleButton.style.background = 'transparent';
+    invisibleButton.ariaHidden = 'true';
+
+    invisibleButton.addEventListener('click', function() {
+        audioElement.play();
+        this.remove();
+    });
+
+    document.body.appendChild(invisibleButton);
+
+    // Aggiungi una notifica (opzionale)
+    const autoplayNote = document.createElement('div');
+    autoplayNote.textContent = 'Clicca in un punto qualsiasi della pagina per attivare l\'audio';
+    autoplayNote.style.position = 'fixed';
+    autoplayNote.style.top = '10px';
+    autoplayNote.style.left = '50%';
+    autoplayNote.style.transform = 'translateX(-50%)';
+    autoplayNote.style.backgroundColor = 'rgba(0,0,0,0.7)';
+    autoplayNote.style.color = 'white';
+    autoplayNote.style.padding = '10px';
+    autoplayNote.style.borderRadius = '5px';
+    autoplayNote.style.zIndex = '2000';
+
+    document.body.appendChild(autoplayNote);
+
+    // Nascondi la notifica dopo 5 secondi
+    setTimeout(() => {
+        autoplayNote.style.display = 'none';
+    }, 5000);
+}
+</script>
 
 <script>
 
