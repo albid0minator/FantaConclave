@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizzatore Squadre e Riserve</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3f37c9;
+            --accent-color: #4cc9f0;
+            --accent-color2: #7209b7;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #777;
+            font-size: 1.1rem;
+        }
+
+        .search-container {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+        }
+
+        .search-box {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        input {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px 0 0 8px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: var(--accent-color);
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            padding: 0 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        /* Bottone standalone */
+        button.standalone {
+            border-radius: 8px;
+            margin: 10px 5px;
+        }
+
+        button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .message {
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .error {
+            background-color: #ffe3e3;
+            color: #cf0000;
+            display: none;
+        }
+
+        .loading {
+            background-color: #e3f2fd;
+            color: #0277bd;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .success {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            display: none;
+            margin-bottom: 20px;
+        }
+
+        .result {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: var(--card-shadow);
+            display: none;
+            margin-bottom: 30px;
+        }
+
+        .result h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .result h3 {
+            color: var(--accent-color2);
+            margin: 25px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .team-member {
+            padding: 12px 15px;
+            background-color: #f0f7ff;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+            border-left: 4px solid var(--accent-color);
+            transition: transform 0.2s;
+        }
+
+        .reserve-member {
+            padding: 12px 15px;
+            background-color: #f3f0ff;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+            border-left: 4px solid var(--accent-color2);
+            transition: transform 0.2s;
+        }
+
+        .team-member:hover, .reserve-member:hover {
+            transform: translateX(5px);
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        /* Stili per il campo di input disabilitato */
+        input:disabled {
+            background-color: #f5f5f5;
+            cursor: not-allowed;
+        }
+
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        /* Animazione di loading */
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+
+        .loading {
+            animation: pulse 1.5s infinite ease-in-out;
+        }
+
+        .team-section {
+            margin-bottom: 20px;
+        }
+
+        .no-data {
+            text-align: center;
+            color: #777;
+            font-style: italic;
+            padding: 15px;
+        }
+
+        /* Nuovi stili per la vista lista */
+        .list-view {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+            display: none;
+        }
+
+        .list-view h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .user-list {
+            margin-bottom: 20px;
+        }
+
+        .user-item {
+            padding: 12px 15px;
+            background-color: #f5f7fa;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            border-left: 4px solid var(--primary-color);
+            transition: all 0.2s;
+        }
+
+        .user-item:hover {
+            background-color: #e9f0f8;
+            transform: translateX(5px);
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .pagination button {
+            margin: 0 5px;
+            padding: 8px 15px;
+            border-radius: 8px;
+        }
+
+        .pagination-info {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #777;
+        }
+
+        .view-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .tab-button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 8px;
+            background-color: #e0e0e0;
+            color: #333;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .tab-button.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .search-box {
+                flex-direction: column;
+            }
+
+            input {
+                border-radius: 8px;
+                margin-bottom: 10px;
+            }
+
+            button {
+                border-radius: 8px;
+                padding: 12px;
+            }
+
+            .pagination button {
+                padding: 6px 12px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Visualizzatore Squadre</h1>
+            <p class="subtitle">Cerca il tuo nome o sfoglia la lista completa</p>
+        </header>
+
+        <div id="loading" class="message loading">Caricamento dati in corso...</div>
+        <div id="loadSuccess" class="message success">Dati caricati con successo! Puoi iniziare la ricerca.</div>
+
+        <div class="view-tabs">
+            <button id="searchTabBtn" class="tab-button active">Ricerca</button>
+            <button id="listTabBtn" class="tab-button">Lista utenti</button>
+        </div>
+
+        <div class="search-container" id="searchContainer">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Inserisci il tuo nome utente" disabled>
+                <button id="searchBtn" disabled>Cerca</button>
+            </div>
+            <div id="error" class="message error">Utente non trovato. Prova con un altro nome.</div>
+        </div>
+
+        <div id="listContainer" class="list-view">
+            <h2>Lista Utenti</h2>
+            <div class="pagination-info">
+                Visualizzazione <span id="paginationStart">1</span>-<span id="paginationEnd">50</span> di <span id="totalUsers">0</span> utenti
+            </div>
+            <div id="userList" class="user-list"></div>
+            <div class="pagination">
+                <button id="prevPageBtn" disabled>Precedente</button>
+                <button id="nextPageBtn" disabled>Successiva</button>
+            </div>
+        </div>
+
+        <div id="result" class="result">
+            <h2>Squadra di <span id="username"></span></h2>
+
+            <div class="team-section">
+                <h3>Titolari</h3>
+                <div id="teamMembers"></div>
+            </div>
+
+            <div class="team-section">
+                <h3>Riserve</h3>
+                <div id="reserveMembers"></div>
+            </div>
+
+            <button id="backToListBtn" class="standalone" style="display: none;">Torna alla lista</button>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Visualizzatore Squadre
+    </footer>
+
+    <script>
+        // Variabile per memorizzare i dati CSV
+        let csvData = [];
+        let currentPage = 1;
+        const usersPerPage = 50;
+        let lastViewMode = 'search'; // 'search' o 'list'
+
+        // Percorso del file CSV - modifica questa riga con il percorso corretto
+        const csvFilePath = 'Python/risp.csv';
+
+        // Carica il CSV all'avvio della pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            loadCSV();
+            setupTabNavigation();
+        });
+
+        function setupTabNavigation() {
+            const searchTabBtn = document.getElementById('searchTabBtn');
+            const listTabBtn = document.getElementById('listTabBtn');
+            const searchContainer = document.getElementById('searchContainer');
+            const listContainer = document.getElementById('listContainer');
+            const resultContainer = document.getElementById('result');
+            const backToListBtn = document.getElementById('backToListBtn');
+
+            // Gestione click sul tab di ricerca
+            searchTabBtn.addEventListener('click', function() {
+                searchTabBtn.classList.add('active');
+                listTabBtn.classList.remove('active');
+                searchContainer.style.display = 'block';
+                listContainer.style.display = 'none';
+                resultContainer.style.display = 'none';
+                lastViewMode = 'search';
+            });
+
+            // Gestione click sul tab della lista
+            listTabBtn.addEventListener('click', function() {
+                listTabBtn.classList.add('active');
+                searchTabBtn.classList.remove('active');
+                listContainer.style.display = 'block';
+                searchContainer.style.display = 'none';
+                resultContainer.style.display = 'none';
+                lastViewMode = 'list';
+                loadUserList();
+            });
+
+            // Gestione click sul bottone "Torna alla lista"
+            backToListBtn.addEventListener('click', function() {
+                if (lastViewMode === 'list') {
+                    // Torna alla vista lista
+                    listTabBtn.click();
+                } else {
+                    // Torna alla vista ricerca
+                    searchTabBtn.click();
+                }
+                resultContainer.style.display = 'none';
+            });
+        }
+
+        // Funzione per caricare il CSV
+        function loadCSV() {
+            Papa.parse(csvFilePath, {
+                download: true,
+                complete: function(results) {
+                    csvData = results.data;
+
+                    // Filtra le righe vuote
+                    csvData = csvData.filter(row => row.length >= 3 && row[0] && row[2]);
+
+                    // Mostra messaggio di successo
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('loadSuccess').style.display = 'block';
+
+                    // Abilita i controlli di ricerca
+                    document.getElementById('searchInput').disabled = false;
+                    document.getElementById('searchBtn').disabled = false;
+
+                    // Aggiorna il numero totale di utenti
+                    document.getElementById('totalUsers').textContent = csvData.length;
+
+                    // Configura la paginazione
+                    setupPagination();
+
+                    console.log("CSV caricato con successo! Righe: " + csvData.length);
+                },
+                error: function(error) {
+                    console.error("Errore nel caricamento del CSV:", error);
+                    document.getElementById('loading').textContent =
+                        "Errore nel caricamento dei dati. Ricarica la pagina o contatta l'amministratore.";
+                    document.getElementById('loading').style.backgroundColor = "#ffe3e3";
+                    document.getElementById('loading').style.color = "#cf0000";
+                }
+            });
+        }
+
+        function setupPagination() {
+            const prevPageBtn = document.getElementById('prevPageBtn');
+            const nextPageBtn = document.getElementById('nextPageBtn');
+
+            prevPageBtn.addEventListener('click', function() {
+                if (currentPage > 1) {
+                    currentPage--;
+                    loadUserList();
+                }
+            });
+
+            nextPageBtn.addEventListener('click', function() {
+                const totalPages = Math.ceil(csvData.length / usersPerPage);
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    loadUserList();
+                }
+            });
+        }
+
+        function loadUserList() {
+            const userListDiv = document.getElementById('userList');
+            const prevPageBtn = document.getElementById('prevPageBtn');
+            const nextPageBtn = document.getElementById('nextPageBtn');
+            const paginationStart = document.getElementById('paginationStart');
+            const paginationEnd = document.getElementById('paginationEnd');
+            const totalUsers = document.getElementById('totalUsers');
+
+            // Calcola indici per la pagina corrente
+            const startIdx = (currentPage - 1) * usersPerPage;
+            const endIdx = Math.min(startIdx + usersPerPage, csvData.length);
+
+            // Aggiorna info paginazione
+            paginationStart.textContent = startIdx + 1;
+            paginationEnd.textContent = endIdx;
+            totalUsers.textContent = csvData.length;
+
+            // Abilita/disabilita bottoni paginazione
+            prevPageBtn.disabled = currentPage === 1;
+            nextPageBtn.disabled = endIdx >= csvData.length;
+
+            // Svuota la lista
+            userListDiv.innerHTML = '';
+
+            // Popola la lista con gli utenti della pagina corrente
+            for (let i = startIdx; i < endIdx; i++) {
+                const row = csvData[i];
+                if (row && row.length >= 3) {
+                    const username = row[2].trim();
+
+                    const userDiv = document.createElement('div');
+                    userDiv.className = 'user-item';
+                    userDiv.textContent = username;
+                    userDiv.dataset.index = i;
+                    userDiv.addEventListener('click', function() {
+                        showUserDetails(parseInt(this.dataset.index));
+                    });
+
+                    userListDiv.appendChild(userDiv);
+                }
+            }
+        }
+
+        function showUserDetails(index) {
+            if (index >= 0 && index < csvData.length) {
+                const row = csvData[index];
+                const resultDiv = document.getElementById('result');
+                const backToListBtn = document.getElementById('backToListBtn');
+                const listContainer = document.getElementById('listContainer');
+                const searchContainer = document.getElementById('searchContainer');
+                const usernameSpan = document.getElementById('username');
+                const teamMembersDiv = document.getElementById('teamMembers');
+                const reserveMembersDiv = document.getElementById('reserveMembers');
+
+                // Mostra dettagli dell'utente
+                usernameSpan.textContent = row[2];
+
+                // Processa i membri della squadra principale (colonna 1)
+                const teamString = row[0];
+                const teamMembers = processTeamMembers(teamString);
+
+                // Visualizza membri della squadra principale
+                teamMembersDiv.innerHTML = '';
+                if (teamMembers.length > 0) {
+                    teamMembers.forEach(member => {
+                        const div = document.createElement('div');
+                        div.className = 'team-member';
+                        div.textContent = member;
+                        teamMembersDiv.appendChild(div);
+                    });
+                } else {
+                    teamMembersDiv.innerHTML = '<div class="no-data">Nessun titolare nella squadra</div>';
+                }
+
+                // Processa i membri della riserva (colonna 2)
+                const reserveString = row.length > 1 ? row[1] : '';
+                const reserveMembers = processTeamMembers(reserveString);
+
+                // Visualizza membri della riserva
+                reserveMembersDiv.innerHTML = '';
+                if (reserveMembers.length > 0) {
+                    reserveMembers.forEach(member => {
+                        const div = document.createElement('div');
+                        div.className = 'reserve-member';
+                        div.textContent = member;
+                        reserveMembersDiv.appendChild(div);
+                    });
+                } else {
+                    reserveMembersDiv.innerHTML = '<div class="no-data">Nessuna riserva nella squadra</div>';
+                }
+
+                // Mostra risultati e nascondi altre viste
+                resultDiv.style.display = 'block';
+                listContainer.style.display = 'none';
+                searchContainer.style.display = 'none';
+                backToListBtn.style.display = 'inline-block';
+            }
+        }
+
+        document.getElementById('searchBtn').addEventListener('click', searchUser);
+        document.getElementById('searchInput').addEventListener('keyup', function(e) {
+            if (e.key === 'Enter') {
+                searchUser();
+            }
+        });
+
+        function searchUser() {
+            const searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
+            const resultDiv = document.getElementById('result');
+            const errorDiv = document.getElementById('error');
+            const usernameSpan = document.getElementById('username');
+            const teamMembersDiv = document.getElementById('teamMembers');
+            const reserveMembersDiv = document.getElementById('reserveMembers');
+            const backToListBtn = document.getElementById('backToListBtn');
+            const searchContainer = document.getElementById('searchContainer');
+
+            if (!searchTerm) {
+                errorDiv.textContent = "Inserisci un nome utente per la ricerca.";
+                errorDiv.style.display = 'block';
+                resultDiv.style.display = 'none';
+                return;
+            }
+
+            // Cerca l'utente nel CSV
+            let found = false;
+            for (let i = 0; i < csvData.length; i++) {
+                const row = csvData[i];
+                if (row.length >= 3) {
+                    const username = row[2].trim().toLowerCase();
+                    if (username === searchTerm) {
+                        found = true;
+
+                        // Mostra risultati
+                        usernameSpan.textContent = row[2];
+
+                        // Processa i membri della squadra principale (colonna 1)
+                        const teamString = row[0];
+                        const teamMembers = processTeamMembers(teamString);
+
+                        // Visualizza membri della squadra principale
+                        teamMembersDiv.innerHTML = '';
+                        if (teamMembers.length > 0) {
+                            teamMembers.forEach(member => {
+                                const div = document.createElement('div');
+                                div.className = 'team-member';
+                                div.textContent = member;
+                                teamMembersDiv.appendChild(div);
+                            });
+                        } else {
+                            teamMembersDiv.innerHTML = '<div class="no-data">Nessun titolare nella squadra</div>';
+                        }
+
+                        // Processa i membri della riserva (colonna 2)
+                        const reserveString = row.length > 1 ? row[1] : '';
+                        const reserveMembers = processTeamMembers(reserveString);
+
+                        // Visualizza membri della riserva
+                        reserveMembersDiv.innerHTML = '';
+                        if (reserveMembers.length > 0) {
+                            reserveMembers.forEach(member => {
+                                const div = document.createElement('div');
+                                div.className = 'reserve-member';
+                                div.textContent = member;
+                                reserveMembersDiv.appendChild(div);
+                            });
+                        } else {
+                            reserveMembersDiv.innerHTML = '<div class="no-data">Nessuna riserva nella squadra</div>';
+                        }
+
+                        resultDiv.style.display = 'block';
+                        searchContainer.style.display = 'none';
+                        errorDiv.style.display = 'none';
+                        backToListBtn.style.display = 'inline-block';
+                        break;
+                    }
+                }
+            }
+
+            if (!found) {
+                errorDiv.textContent = "Utente non trovato. Prova con un altro nome.";
+                errorDiv.style.display = 'block';
+                resultDiv.style.display = 'none';
+            }
+        }
+
+        function processTeamMembers(teamString) {
+            // Se la stringa è vuota o undefined, restituisce un array vuoto
+            if (!teamString) return [];
+
+            // Rimuovi le virgolette se presenti all'inizio e alla fine
+            teamString = teamString.replace(/^"|"$/g, '');
+
+            // Divide la stringa per virgole
+            const rawMembers = teamString.split(',');
+
+            // Pulisci ogni membro rimuovendo spazi extra e parentesi quadre con contenuto
+            return rawMembers.map(member => {
+                // Rimuovi spazi all'inizio e alla fine
+                let cleanMember = member.trim();
+
+                // Rimuovi le parentesi quadre e il loro contenuto
+                cleanMember = cleanMember.replace(/\[\d+\]/g, '').trim();
+
+                return cleanMember;
+            }).filter(member => member.length > 0); // Filtra eventuali membri vuoti
+        }
+    </script>
+</body>
+</html>
