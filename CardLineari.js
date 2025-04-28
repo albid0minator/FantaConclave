@@ -422,5 +422,15 @@ cardinali=[
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Fabio_Baggio-5-2-2019.jpg/330px-Fabio_Baggio-5-2-2019.jpg",
         "punteggio": 7
     },
-
+    {
+        "nome": "Lazarus You Heung-sik",
+        "dataNascita": "17/11/1951",
+        "paese": "Corea del Sud",
+        "ruolo": "Cardinale diacono di Gesù Buon Pastore alla Montagnola, Prefetto del Dicastero per il clero",
+        "dataNomina": "27/08/2022",
+        "continente": "Asia",
+        "wikiUrl": "https://it.wikipedia.org/wiki/Lazarus_You_Heung-sik",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Card._Heung-sik.png/250px-Card._Heung-sik.png"
+        ,"punteggio": 7
+    }
 ]
