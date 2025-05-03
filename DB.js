@@ -524,16 +524,7 @@ const cardinali =[
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Portrait_of_Cardinal_Advincula.jpg/250px-Portrait_of_Cardinal_Advincula.jpg"
     },
 
-    {
-        "nome": "Lazarus You Heung-sik",
-        "dataNascita": "17/11/1951",
-        "paese": "Corea del Sud",
-        "ruolo": "Cardinale diacono di Gesù Buon Pastore alla Montagnola, Prefetto del Dicastero per il clero",
-        "dataNomina": "27/08/2022",
-        "continente": "Asia",
-        "wikiUrl": "https://it.wikipedia.org/wiki/Lazarus_You_Heung-sik",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Card._Heung-sik.png/250px-Card._Heung-sik.png"
-    },
+
     {
         "nome": "Sebastian Francis",
         "dataNascita": "11/11/1951",

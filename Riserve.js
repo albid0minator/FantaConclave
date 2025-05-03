@@ -30,7 +30,7 @@ const cardinaliRiserva = [
             "continente": "Europa",
             "wikiUrl": "https://it.wikipedia.org/wiki/Agostino_Marchetto",
             "imageUrl": "https://gfx.ilgiornaledivicenza.it/image/contentid/policy:1.9406218:1652421075/image.jpg?f=16x9&h=421&w=750&$p$f$h$w=597732e",
-            "punteggio": 8
+            "punteggio": 9
         },
         {
             "nome": "Mauro Piacenza",
@@ -41,7 +41,7 @@ const cardinaliRiserva = [
             "continente": "Europa",
             "wikiUrl": "https://it.wikipedia.org/wiki/Mauro_Piacenza",
             "imageUrl": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3D9Gd8UhUEQjD62M8U346wrtb_JTMynT2eqqdyI93z2jQjSWe",
-            "punteggio": 9
+            "punteggio": 7
         },
         {
             "nome": "Leonardo Sandri",
