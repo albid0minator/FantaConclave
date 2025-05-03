@@ -1,8 +1,36 @@
+// Modifica a leghe.js per renderlo più resiliente
 document.addEventListener('DOMContentLoaded', function() {
     // Riferimento all'elemento contenitore delle leghe
     const legheContainer = document.getElementById('leghe-container');
     const searchInput = document.getElementById('search-leghe');
     const sortSelect = document.getElementById('sort-leghe');
+
+    // Verifica se legheDati è disponibile o carica il file se necessario
+    function ensureLegheDatiLoaded(callback) {
+        if (typeof legheDati !== 'undefined') {
+            callback(legheDati);
+            return;
+        }
+
+        // Se legheDati non è definito, prova a caricarlo
+        console.log('Tentativo di caricamento di legheDati.js...');
+        const script = document.createElement('script');
+        script.src = 'legheDati.js';
+        script.onload = function() {
+            if (typeof legheDati !== 'undefined') {
+                console.log('legheDati.js caricato con successo');
+                callback(legheDati);
+            } else {
+                console.error('File legheDati.js caricato ma la variabile legheDati non è definita');
+                legheContainer.innerHTML = '<p>Impossibile caricare i dati delle leghe. Riprova più tardi.</p>';
+            }
+        };
+        script.onerror = function() {
+            console.error('Impossibile caricare legheDati.js');
+            legheContainer.innerHTML = '<p>Impossibile caricare i dati delle leghe. Riprova più tardi.</p>';
+        };
+        document.head.appendChild(script);
+    }
 
     // Funzione per visualizzare le leghe in formato compatto
     function displayLegheCompact(leghe) {
@@ -113,25 +141,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Funzione per filtrare e ordinare le leghe
     function filterAndSortLeghe() {
-        if (typeof legheDati === 'undefined') return;
+        ensureLegheDatiLoaded(function(data) {
+            const searchTerm = searchInput.value.toLowerCase();
+            const sortBy = sortSelect.value;
 
-        const searchTerm = searchInput.value.toLowerCase();
-        const sortBy = sortSelect.value;
+            // Filtra le leghe in base al termine di ricerca
+            let filteredLeghe = data.filter(lega =>
+                lega.nome.toLowerCase().includes(searchTerm)
+            );
 
-        // Filtra le leghe in base al termine di ricerca
-        let filteredLeghe = legheDati.filter(lega =>
-            lega.nome.toLowerCase().includes(searchTerm)
-        );
+            // Ordina le leghe
+            if (sortBy === 'nome') {
+                filteredLeghe.sort((a, b) => a.nome.localeCompare(b.nome));
+            } else if (sortBy === 'partecipanti') {
+                filteredLeghe.sort((a, b) => b.partecipanti.length - a.partecipanti.length);
+            }
 
-        // Ordina le leghe
-        if (sortBy === 'nome') {
-            filteredLeghe.sort((a, b) => a.nome.localeCompare(b.nome));
-        } else if (sortBy === 'partecipanti') {
-            filteredLeghe.sort((a, b) => b.partecipanti.length - a.partecipanti.length);
-        }
-
-        // Visualizza le leghe filtrate e ordinate
-        displayLegheCompact(filteredLeghe);
+            // Visualizza le leghe filtrate e ordinate
+            displayLegheCompact(filteredLeghe);
+        });
     }
 
     // Aggiungi listener per la ricerca e l'ordinamento
@@ -141,10 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Inizializza la visualizzazione con tutte le leghe disponibili
-    if (typeof legheDati !== 'undefined') {
-        displayLegheCompact(legheDati);
-    } else {
-        console.error('File legheDati.js non caricato correttamente');
-        legheContainer.innerHTML = '<p>Impossibile caricare i dati delle leghe. Riprova più tardi.</p>';
-    }
+    ensureLegheDatiLoaded(function(data) {
+        displayLegheCompact(data);
+    });
 });
