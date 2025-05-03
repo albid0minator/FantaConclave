@@ -430,8 +430,17 @@
     <h2>Leghe del FantaConclave</h2>
     <p>Esplora le leghe create dai giocatori e i relativi partecipanti.</p>
 
+    <!-- Filtri e controlli -->
+    <div class="leghe-controls">
+      <input type="text" id="search-leghe" placeholder="Cerca lega..." class="search-input">
+      <select id="sort-leghe" class="sort-select">
+        <option value="nome">Ordina per nome</option>
+        <option value="partecipanti">Ordina per n° partecipanti</option>
+      </select>
+    </div>
+
     <!-- Container per visualizzare le leghe -->
-    <div class="leghe-container" id="leghe-container">
+    <div class="leghe-grid" id="leghe-container">
       <!-- Le leghe saranno generate da JavaScript -->
     </div>
   </div>
@@ -449,7 +458,7 @@
 <script src="Riserve.js"></script>
 <script src="script.js"></script>
 <script src="grafico.js"></script>
-<script src="LegheDati.js"></script>
+<script src="legheDati.js"></script>
 <script src="leghe.js"></script>
 
 
