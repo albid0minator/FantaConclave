@@ -1,0 +1,31 @@
+.lega-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.lega-title {
+    color: #800020;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.partecipanti-list {
+    list-style: none;
+    padding: 0;
+}
+
+.partecipante-item {
+    background-color: #fff;
+    border-left: 3px solid #800020;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+}
+
+.partecipante-name {
+    font-weight: bold;
+}
