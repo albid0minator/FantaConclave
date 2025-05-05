@@ -1,0 +1,116 @@
+.leghe-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-input, .sort-select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+/* Layout a griglia per le leghe */
+.leghe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.lega-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lega-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.lega-title {
+    color: #800020;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.lega-count {
+    background-color: #800020;
+    color: white;
+    border-radius: 20px;
+    padding: 2px 8px;
+    font-size: 0.8em;
+}
+
+/* Stile per la visualizzazione compatta dei partecipanti */
+.partecipanti-compact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.partecipante-chip {
+    background-color: #fff;
+    border-left: 2px solid #800020;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85em;
+}
+
+/* Toggle per la visualizzazione */
+.view-toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.toggle-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.toggle-btn.active {
+    background-color: #800020;
+    color: white;
+    border-color: #800020;
+}
+
+.toggle-btn:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.toggle-btn:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+/* Stile per modalità espandibile */
+.lega-details {
+    margin-top: 10px;
+}
+
+.show-more {
+    color: #800020;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 5px;
+    margin-top: auto;
+}

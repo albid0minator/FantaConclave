@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="tg.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
   <link rel="stylesheet" href="grafico.css">
+  <link rel="stylesheet" href="leghe.css">
 
 </head>
 <body>
@@ -86,6 +87,7 @@
     <button class="tab-btn" data-tab="regolamento">Regolamento</button>
     <button class="tab-btn" data-tab="Bonusmalus">Bonus e Malus</button>
     <button class="tab-btn" data-tab="Classifiche">Classifiche</button>
+    <button class="tab-btn" data-tab="leghe">Leghe</button>
   </div>
 
   <div id="cardinali" class="content-pane active">
@@ -428,7 +430,27 @@
       <canvas id="myChart"></canvas>
     </div>
   </div>
+  <div id="leghe" class="content-pane">
+    <h2>Leghe del FantaConclave</h2>
+    <p>Esplora le leghe create dai giocatori e i relativi partecipanti.</p>
+
+    <!-- Filtri e controlli -->
+    <div class="leghe-controls">
+      <input type="text" id="search-leghe" placeholder="Cerca lega..." class="search-input">
+      <select id="sort-leghe" class="sort-select">
+        <option value="nome">Ordina per nome</option>
+        <option value="partecipanti">Ordina per n° partecipanti</option>
+      </select>
+    </div>
+
+    <!-- Container per visualizzare le leghe -->
+    <div class="leghe-grid" id="leghe-container">
+      <!-- Le leghe saranno generate da JavaScript -->
+    </div>
+  </div>
 </div>
+
+
 <footer>
   <div class="container">
     <p>FantaPapa 2025 - Un gioco di previsione per l'elezione del nuovo Papa</p>
@@ -441,10 +463,8 @@
 <script src="script.js"></script>
 <script src="grafico.js"></script>
 
-
-<script>
-
-</script>
+<script src="LegheSquadre.js"></script>
+<script src="leghe.js"></script>
 
 </body>
 </html>
