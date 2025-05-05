@@ -1,39 +1,33 @@
 const legheDati = [
     {
-        "nome": "Intrepido Papa",
+        "nome": ".",
         "partecipanti": [
             {
-                "nome": "Supermamma"
+                "nome": "40denari"
             }
         ]
     },
     {
-        "nome": "LesboClave",
+        "nome": "A",
         "partecipanti": [
             {
-                "nome": "Conclaculi"
-            },
-            {
-                "nome": "Culiconclave"
+                "nome": "John24"
             }
         ]
     },
     {
-        "nome": "Le maranza",
+        "nome": "A caval papato non si guarda in bocca ",
         "partecipanti": [
             {
-                "nome": "Atletico Apostolico"
+                "nome": "Papessa"
             }
         ]
     },
     {
-        "nome": "Papamani&Galga",
+        "nome": "A cavall papato non li si guarda in bocca",
         "partecipanti": [
             {
-                "nome": "Francy la Santa "
-            },
-            {
-                "nome": "LaBadessa"
+                "nome": "Il papà nero"
             }
         ]
     },
@@ -46,86 +40,59 @@ const legheDati = [
         ]
     },
     {
-        "nome": "GxLuvpapa",
+        "nome": "AVERAMENTBAELL",
         "partecipanti": [
             {
-                "nome": "Luvum"
+                "nome": "Maria88"
             }
         ]
     },
     {
-        "nome": "Papappero",
+        "nome": "Benedicti XVI cardinals league ",
         "partecipanti": [
             {
-                "nome": "PapaSistoSesto"
+                "nome": "Chiesa liberal-conservatrice"
+            }
+        ]
+    },
+    {
+        "nome": "Boh che ne so io",
+        "partecipanti": [
+            {
+                "nome": "Il capo "
+            }
+        ]
+    },
+    {
+        "nome": "cataniacomanda!",
+        "partecipanti": [
+            {
+                "nome": "martuzpapessa"
             },
             {
-                "nome": "Chicca"
+                "nome": "ciccioromeopapa"
             }
         ]
     },
     {
-        "nome": "Lobotka",
+        "nome": "Chiesa82",
         "partecipanti": [
             {
-                "nome": "Pizzaballa"
+                "nome": "Fontanini82 "
+            }
+        ]
+    },
+    {
+        "nome": "Conclanito",
+        "partecipanti": [
+            {
+                "nome": "Papa Benito"
             },
             {
-                "nome": "tobio"
-            }
-        ]
-    },
-    {
-        "nome": "voglio un nero",
-        "partecipanti": [
-            {
-                "nome": "vinsss"
+                "nome": "Uncle_silo"
             },
             {
-                "nome": "fratm ciccio"
-            },
-            {
-                "nome": "vinsss"
-            }
-        ]
-    },
-    {
-        "nome": "TheShashiPope",
-        "partecipanti": [
-            {
-                "nome": "PitConclave"
-            }
-        ]
-    },
-    {
-        "nome": "rosy cup",
-        "partecipanti": [
-            {
-                "nome": "ninam "
-            }
-        ]
-    },
-    {
-        "nome": "I migliori del Conclave siamo noiii",
-        "partecipanti": [
-            {
-                "nome": "ClaCla"
-            }
-        ]
-    },
-    {
-        "nome": "Spirito Santo",
-        "partecipanti": [
-            {
-                "nome": "Mileee"
-            }
-        ]
-    },
-    {
-        "nome": "LegaFranciscus ",
-        "partecipanti": [
-            {
-                "nome": "bellini360"
+                "nome": "Berto94"
             }
         ]
     },
@@ -147,10 +114,366 @@ const legheDati = [
         ]
     },
     {
+        "nome": "daunBFF",
+        "partecipanti": [
+            {
+                "nome": "Shopi"
+            },
+            {
+                "nome": "CIRCE BICE TRIXI "
+            }
+        ]
+    },
+    {
+        "nome": "Destra nazionale",
+        "partecipanti": [
+            {
+                "nome": "labimbadelsarah"
+            },
+            {
+                "nome": "Violinistanonroșa"
+            },
+            {
+                "nome": "PulaMea"
+            }
+        ]
+    },
+    {
+        "nome": "Famiglia1",
+        "partecipanti": [
+            {
+                "nome": "Bene03"
+            }
+        ]
+    },
+    {
+        "nome": "Family delle lumache ",
+        "partecipanti": [
+            {
+                "nome": "Gabry"
+            }
+        ]
+    },
+    {
+        "nome": "Fanta Orlandi",
+        "partecipanti": [
+            {
+                "nome": "Francy"
+            },
+            {
+                "nome": "pasquale.vacca_0100"
+            },
+            {
+                "nome": "IL_VATE-DUNFRIES"
+            }
+        ]
+    },
+    {
+        "nome": "Fantafriends",
+        "partecipanti": [
+            {
+                "nome": "maridl96"
+            }
+        ]
+    },
+    {
         "nome": "Faretto_Conclavetto ",
         "partecipanti": [
             {
+                "nome": "TheYangPope"
+            },
+            {
                 "nome": "666"
+            }
+        ]
+    },
+    {
+        "nome": "Fridolin4Pope",
+        "partecipanti": [
+            {
+                "nome": "In God we trust"
+            }
+        ]
+    },
+    {
+        "nome": "fumata Bianca o Nera?",
+        "partecipanti": [
+            {
+                "nome": "GiuliaBZ"
+            },
+            {
+                "nome": "scianny"
+            },
+            {
+                "nome": "piccola"
+            }
+        ]
+    },
+    {
+        "nome": "Gargamelli",
+        "partecipanti": [
+            {
+                "nome": "COSTYY"
+            },
+            {
+                "nome": "Maverik87"
+            },
+            {
+                "nome": "SorellonaVale"
+            }
+        ]
+    },
+    {
+        "nome": "Gugclave",
+        "partecipanti": [
+            {
+                "nome": "clafitzy"
+            },
+            {
+                "nome": "BigMatteo"
+            },
+            {
+                "nome": "HabemusBoss"
+            }
+        ]
+    },
+    {
+        "nome": "GxLuvpapa",
+        "partecipanti": [
+            {
+                "nome": "Luvum"
+            }
+        ]
+    },
+    {
+        "nome": "I DELISIOSSI PAPA EDITION",
+        "partecipanti": [
+            {
+                "nome": "Monnalulla"
+            },
+            {
+                "nome": "buonSM"
+            },
+            {
+                "nome": "Giukry"
+            }
+        ]
+    },
+    {
+        "nome": "I migliori del Conclave siamo noiii",
+        "partecipanti": [
+            {
+                "nome": "ClaCla"
+            }
+        ]
+    },
+    {
+        "nome": "i papabili",
+        "partecipanti": [
+            {
+                "nome": "Fratech"
+            },
+            {
+                "nome": "Papa Cesare IC"
+            }
+        ]
+    },
+    {
+        "nome": "Intrepido Papa",
+        "partecipanti": [
+            {
+                "nome": "Supermamma"
+            }
+        ]
+    },
+    {
+        "nome": "La Lumaca di Corleone",
+        "partecipanti": [
+            {
+                "nome": "Fleming33"
+            }
+        ]
+    },
+    {
+        "nome": "Laura j Bevilacqua ",
+        "partecipanti": [
+            {
+                "nome": "Lalla "
+            }
+        ]
+    },
+    {
+        "nome": "Lavezzari",
+        "partecipanti": [
+            {
+                "nome": "Chiara"
+            },
+            {
+                "nome": "LauraElda"
+            }
+        ]
+    },
+    {
+        "nome": "Le maranza",
+        "partecipanti": [
+            {
+                "nome": "Atletico Apostolico"
+            }
+        ]
+    },
+    {
+        "nome": "Le Papesse",
+        "partecipanti": [
+            {
+                "nome": "SaraCassio"
+            },
+            {
+                "nome": "Papessa"
+            }
+        ]
+    },
+    {
+        "nome": "Lega Cevo",
+        "partecipanti": [
+            {
+                "nome": "I gesucristi"
+            },
+            {
+                "nome": "I gesucristiani"
+            }
+        ]
+    },
+    {
+        "nome": "Lega Fridolin4Pope",
+        "partecipanti": [
+            {
+                "nome": "Maxwell95"
+            }
+        ]
+    },
+    {
+        "nome": "Lega Fridolin4pope",
+        "partecipanti": [
+            {
+                "nome": "Luomoragnopaposo"
+            }
+        ]
+    },
+    {
+        "nome": "Lega Fridolin4Pope",
+        "partecipanti": [
+            {
+                "nome": "Pope Szymon"
+            }
+        ]
+    },
+    {
+        "nome": "Lega Fridolin4Popeciceeffe",
+        "partecipanti": [
+            {
+                "nome": "ciceeffe"
+            }
+        ]
+    },
+    {
+        "nome": "Lega NaVik",
+        "partecipanti": [
+            {
+                "nome": "Memole_Dolce_Memole_1983"
+            }
+        ]
+    },
+    {
+        "nome": "Lega Piccini",
+        "partecipanti": [
+            {
+                "nome": "IK98"
+            }
+        ]
+    },
+    {
+        "nome": "LegaFranciscus ",
+        "partecipanti": [
+            {
+                "nome": "bellini360"
+            }
+        ]
+    },
+    {
+        "nome": "LePapabili",
+        "partecipanti": [
+            {
+                "nome": "AvemusMaria"
+            },
+            {
+                "nome": "AvemusMaria"
+            },
+            {
+                "nome": "Madre sospetta"
+            }
+        ]
+    },
+    {
+        "nome": "LesboClave",
+        "partecipanti": [
+            {
+                "nome": "Conclaculi"
+            },
+            {
+                "nome": "Culiconclave"
+            }
+        ]
+    },
+    {
+        "nome": "Lobotka",
+        "partecipanti": [
+            {
+                "nome": "Pizzaballa"
+            },
+            {
+                "nome": "tobio"
+            }
+        ]
+    },
+    {
+        "nome": "LVMI",
+        "partecipanti": [
+            {
+                "nome": "BALUBA FC"
+            },
+            {
+                "nome": "Eddy Papi Chulo"
+            },
+            {
+                "nome": "Waltersolepapanero"
+            },
+            {
+                "nome": "Papanero "
+            }
+        ]
+    },
+    {
+        "nome": "ManpowerCelestiale",
+        "partecipanti": [
+            {
+                "nome": "Habemus Contrattus"
+            },
+            {
+                "nome": "JobPope"
+            },
+            {
+                "nome": "Don Perm"
+            },
+            {
+                "nome": "Papa Rifki XXK"
+            }
+        ]
+    },
+    {
+        "nome": "N/A",
+        "partecipanti": [
+            {
+                "nome": "Fh0nix777"
             }
         ]
     },
@@ -166,10 +489,34 @@ const legheDati = [
         ]
     },
     {
-        "nome": "Faretto_Conclavetto",
+        "nome": "no",
         "partecipanti": [
             {
-                "nome": "TheYangPope"
+                "nome": "la vale"
+            }
+        ]
+    },
+    {
+        "nome": "No",
+        "partecipanti": [
+            {
+                "nome": "Alice"
+            }
+        ]
+    },
+    {
+        "nome": "no bro",
+        "partecipanti": [
+            {
+                "nome": "scorreggina cappuccina thum thum saur"
+            }
+        ]
+    },
+    {
+        "nome": "Nzizu",
+        "partecipanti": [
+            {
+                "nome": "Lalla "
             }
         ]
     },
@@ -200,29 +547,24 @@ const legheDati = [
         ]
     },
     {
-        "nome": "Fantafriends",
+        "nome": "Papamani&Galga",
         "partecipanti": [
             {
-                "nome": "maridl96"
-            }
-        ]
-    },
-    {
-        "nome": "cataniacomanda!",
-        "partecipanti": [
-            {
-                "nome": "martuzpapessa"
+                "nome": "Francy la Santa "
             },
             {
-                "nome": "ciccioromeopapa"
+                "nome": "LaBadessa"
             }
         ]
     },
     {
-        "nome": "tutti v tutti",
+        "nome": "Papappero",
         "partecipanti": [
             {
-                "nome": "Turetts II"
+                "nome": "PapaSistoSesto"
+            },
+            {
+                "nome": "Chicca"
             }
         ]
     },
@@ -231,125 +573,6 @@ const legheDati = [
         "partecipanti": [
             {
                 "nome": "papa v"
-            }
-        ]
-    },
-    {
-        "nome": "Seguimi",
-        "partecipanti": [
-            {
-                "nome": "Speriamo bene"
-            }
-        ]
-    },
-    {
-        "nome": "Lega Piccini",
-        "partecipanti": [
-            {
-                "nome": "IK98"
-            }
-        ]
-    },
-    {
-        "nome": "Gargamelli",
-        "partecipanti": [
-            {
-                "nome": "COSTYY"
-            },
-            {
-                "nome": "Maverik87"
-            },
-            {
-                "nome": "SorellonaVale"
-            }
-        ]
-    },
-    {
-        "nome": "Top rimasti",
-        "partecipanti": [
-            {
-                "nome": "Papa Niciolo III"
-            },
-            {
-                "nome": "Peppe"
-            }
-        ]
-    },
-    {
-        "nome": "toprimasti",
-        "partecipanti": [
-            {
-                "nome": "ariannina"
-            }
-        ]
-    },
-    {
-        "nome": "Nzizu",
-        "partecipanti": [
-            {
-                "nome": "Lalla "
-            }
-        ]
-    },
-    {
-        "nome": "Laura j Bevilacqua ",
-        "partecipanti": [
-            {
-                "nome": "Lalla "
-            }
-        ]
-    },
-    {
-        "nome": "Sirius and the boyz",
-        "partecipanti": [
-            {
-                "nome": "Ellelee"
-            }
-        ]
-    },
-    {
-        "nome": "LePapabili",
-        "partecipanti": [
-            {
-                "nome": "AvemusMaria"
-            },
-            {
-                "nome": "AvemusMaria"
-            },
-            {
-                "nome": "Madre sospetta"
-            }
-        ]
-    },
-    {
-        "nome": "AVERAMENTBAELL",
-        "partecipanti": [
-            {
-                "nome": "Maria88"
-            }
-        ]
-    },
-    {
-        "nome": "Benedicti XVI cardinals league ",
-        "partecipanti": [
-            {
-                "nome": "Chiesa liberal-conservatrice"
-            }
-        ]
-    },
-    {
-        "nome": "no bro",
-        "partecipanti": [
-            {
-                "nome": "scorreggina cappuccina thum thum saur"
-            }
-        ]
-    },
-    {
-        "nome": ".",
-        "partecipanti": [
-            {
-                "nome": "40denari"
             }
         ]
     },
@@ -365,92 +588,10 @@ const legheDati = [
         ]
     },
     {
-        "nome": "i papabili",
+        "nome": "Parken religioso",
         "partecipanti": [
             {
-                "nome": "Papa Cesare IC"
-            }
-        ]
-    },
-    {
-        "nome": "Chiesa82",
-        "partecipanti": [
-            {
-                "nome": "Fontanini82 "
-            }
-        ]
-    },
-    {
-        "nome": "LVMI",
-        "partecipanti": [
-            {
-                "nome": "BALUBA FC"
-            },
-            {
-                "nome": "Eddy Papi Chulo"
-            },
-            {
-                "nome": "Waltersolepapanero"
-            },
-            {
-                "nome": "Papanero "
-            }
-        ]
-    },
-    {
-        "nome": "no",
-        "partecipanti": [
-            {
-                "nome": "la vale"
-            }
-        ]
-    },
-    {
-        "nome": "Lega Cevo",
-        "partecipanti": [
-            {
-                "nome": "I gesucristi"
-            },
-            {
-                "nome": "I gesucristiani"
-            }
-        ]
-    },
-    {
-        "nome": "fumata Bianca o Nera?",
-        "partecipanti": [
-            {
-                "nome": "GiuliaBZ"
-            },
-            {
-                "nome": "scianny"
-            },
-            {
-                "nome": "piccola"
-            }
-        ]
-    },
-    {
-        "nome": "Boh che ne so io",
-        "partecipanti": [
-            {
-                "nome": "Il capo "
-            }
-        ]
-    },
-    {
-        "nome": "A",
-        "partecipanti": [
-            {
-                "nome": "John24"
-            }
-        ]
-    },
-    {
-        "nome": "Lega NaVik",
-        "partecipanti": [
-            {
-                "nome": "Memole_Dolce_Memole_1983"
+                "nome": "Gaia Divina"
             }
         ]
     },
@@ -459,6 +600,128 @@ const legheDati = [
         "partecipanti": [
             {
                 "nome": "muccavolante12"
+            }
+        ]
+    },
+    {
+        "nome": "Ratzinger vero Papa",
+        "partecipanti": [
+            {
+                "nome": "Aloisius"
+            },
+            {
+                "nome": "Papa nero"
+            },
+            {
+                "nome": "Lucius"
+            },
+            {
+                "nome": "Paolo"
+            }
+        ]
+    },
+    {
+        "nome": "rosy cup",
+        "partecipanti": [
+            {
+                "nome": "ninam "
+            }
+        ]
+    },
+    {
+        "nome": "Salvini ",
+        "partecipanti": [
+            {
+                "nome": "Nicepawer7 "
+            }
+        ]
+    },
+    {
+        "nome": "santiGrandiconchiara",
+        "partecipanti": [
+            {
+                "nome": "Grandiconchiara"
+            }
+        ]
+    },
+    {
+        "nome": "santiGrandiziopera",
+        "partecipanti": [
+            {
+                "nome": "ziopera"
+            }
+        ]
+    },
+    {
+        "nome": "santiGranditorome",
+        "partecipanti": [
+            {
+                "nome": "rome"
+            }
+        ]
+    },
+    {
+        "nome": "Seguimi",
+        "partecipanti": [
+            {
+                "nome": "Speriamo bene"
+            }
+        ]
+    },
+    {
+        "nome": "Sfigati",
+        "partecipanti": [
+            {
+                "nome": "Asagaia"
+            },
+            {
+                "nome": "Diavoli"
+            },
+            {
+                "nome": "Francis Delacroix"
+            },
+            {
+                "nome": "Cicciapasticcia"
+            }
+        ]
+    },
+    {
+        "nome": "Sirius and the boyz",
+        "partecipanti": [
+            {
+                "nome": "Ellelee"
+            }
+        ]
+    },
+    {
+        "nome": "Spirito Santo",
+        "partecipanti": [
+            {
+                "nome": "Mileee"
+            }
+        ]
+    },
+    {
+        "nome": "swiftland",
+        "partecipanti": [
+            {
+                "nome": "felixfor03"
+            },
+            {
+                "nome": "Giddi"
+            },
+            {
+                "nome": "lucy"
+            },
+            {"nome": "kikka"
+            }
+        ]
+    },
+    {
+        "nome": "TheShashiPope",
+        "partecipanti": [
+            {
+                "nome": "PitConclave"
             }
         ]
     },
@@ -488,6 +751,25 @@ const legheDati = [
         ]
     },
     {
+        "nome": "Top rimasti",
+        "partecipanti": [
+            {
+                "nome": "Papa Niciolo III"
+            },
+            {
+                "nome": "Peppe"
+            }
+        ]
+    },
+    {
+        "nome": "toprimasti",
+        "partecipanti": [
+            {
+                "nome": "ariannina"
+            }
+        ]
+    },
+    {
         "nome": "TRIPOL G",
         "partecipanti": [
             {
@@ -502,35 +784,46 @@ const legheDati = [
         ]
     },
     {
-        "nome": "A caval papato non si guarda in bocca ",
+        "nome": "tutti v tutti",
         "partecipanti": [
             {
-                "nome": "Papessa"
+                "nome": "Turetts II"
             }
         ]
     },
     {
-        "nome": "No",
+        "nome": "VATISQUAD",
         "partecipanti": [
             {
-                "nome": "Alice"
+                "nome": "FikyDani"
+            },
+            {
+                "nome": "PituraFreskaProfeti"
             }
         ]
     },
     {
-        "nome": "Sfigati",
+        "nome": "voglio un nero",
         "partecipanti": [
             {
-                "nome": "Asagaia"
+                "nome": "vinsss"
             },
             {
-                "nome": "Diavoli"
+                "nome": "fratm ciccio"
             },
             {
-                "nome": "Francis Delacroix"
+                "nome": "vinsss"
+            }
+        ]
+    },
+    {
+        "nome": "Xena13",
+        "partecipanti": [
+            {
+                "nome": "Xena"
             },
             {
-                "nome": "Cicciapasticcia"
+                "nome": "Bonifax"
             }
         ]
     },
@@ -538,64 +831,13 @@ const legheDati = [
         "nome": "Zniuzz",
         "partecipanti": [
             {
+                "nome": "marco_tiktok"
+            },
+            {
+                "nome": "Lina"
+            },
+            {
                 "nome": "Lalla "
-            }
-        ]
-    },
-    {
-        "nome": "Gugclave",
-        "partecipanti": [
-            {
-                "nome": "clafitzy"
-            },
-            {
-                "nome": "BigMatteo"
-            }
-        ]
-    },
-    {
-        "nome": "daunBFF",
-        "partecipanti": [
-            {
-                "nome": "Shopi"
-            },
-            {
-                "nome": "CIRCE BICE TRIXI "
-            }
-        ]
-    },
-    {
-        "nome": "ManpowerCelestiale",
-        "partecipanti": [
-            {
-                "nome": "Habemus Contrattus"
-            },
-            {
-                "nome": "JobPope"
-            }
-        ]
-    },
-    {
-        "nome": "Salvini ",
-        "partecipanti": [
-            {
-                "nome": "Nicepawer7 "
-            }
-        ]
-    },
-    {
-        "nome": "Family delle lumache ",
-        "partecipanti": [
-            {
-                "nome": "Gabry"
-            }
-        ]
-    },
-    {
-        "nome": "Famiglia1",
-        "partecipanti": [
-            {
-                "nome": "Bene03"
             }
         ]
     }
