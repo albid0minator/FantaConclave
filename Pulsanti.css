@@ -1,0 +1,145 @@
+.action-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.action-button {
+    flex: 1 1 230px;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 18px;
+    background: linear-gradient(135deg, #800020 0%, #a00030 100%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border: 1.5px solid transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.action-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    border-color: #FFD700;
+}
+
+.action-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #a00030 0%, #800020 100%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.action-button:hover::before {
+    opacity: 1;
+}
+
+.action-button-icon {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.action-button-text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+/* Varianti di colore per i pulsanti */
+.action-button.primary {
+    background: linear-gradient(135deg, #800020 0%, #a00030 100%);
+}
+
+.action-button.secondary {
+    background: linear-gradient(135deg, #8B0000 0%, #b22222 100%);
+}
+
+.action-button.tertiary {
+    background: linear-gradient(135deg, #900C3F 0%, #C70039 100%);
+}
+
+.action-button.quaternary {
+    background: linear-gradient(135deg, #581845 0%, #900C3F 100%);
+}
+
+/* Stile per dispositivi mobili - VERSIONE INTERMEDIA */
+@media (max-width: 768px) {
+    .action-buttons-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 10px;
+        margin: 20px auto;
+        width: calc(100% - 20px); /* Garantisce che il contenitore non superi la larghezza dello schermo */
+    }
+
+    .action-button {
+        width: 100%;
+        flex: none;
+        min-width: 0;
+        padding: 10px 15px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box; /* Assicura che padding e bordo non aumentino la larghezza totale */
+        margin-right: 0; /* Elimina eventuali margini a destra */
+    }
+
+    .action-button-icon {
+        margin-bottom: 0;
+        margin-right: 12px;
+        font-size: 18px;
+        min-width: 18px;
+    }
+
+    .action-button-text {
+        font-size: 14px;
+        text-align: left;
+        line-height: 1.2;
+    }
+}
+
+/* Per schermi ancora più piccoli */
+@media (max-width: 480px) {
+    .action-buttons-container {
+        gap: 8px;
+        width: calc(100% - 16px); /* Ridotto ulteriormente il margine laterale */
+        padding: 0 8px;
+        max-width: 100%;
+    }
+
+    .action-button {
+        padding: 10px 12px;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden; /* Previene che il contenuto fuoriesca */
+    }
+
+    .action-button-icon {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .action-button-text {
+        font-size: 13px;
+    }
+}
