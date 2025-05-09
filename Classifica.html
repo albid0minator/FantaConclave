@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classifica Team</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        #controls {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #controls input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            flex-grow: 1;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        #paginationControls {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #paginationControls button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin: 0 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #paginationControls button:hover {
+            background-color: #0056b3;
+        }
+        #paginationControls button.active {
+            background-color: #0056b3;
+            font-weight: bold;
+        }
+        #paginationControls button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+            display: block;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Classifica</h1>
+
+<div id="controls">
+    <input type="text" id="searchInput" placeholder="Cerca Team...">
+</div>
+
+<div id="loader" class="loader"></div>
+
+<table id="leaderboardTable">
+    <thead>
+    <tr>
+        <th>Posizione</th>
+        <th>Nickname</th>
+        <th>Punteggio della squadra</th>
+        <th>Punteggio Finale</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- I dati verranno inseriti qui da JavaScript -->
+    </tbody>
+</table>
+
+<div id="paginationControls">
+    <!-- I bottoni di paginazione verranno inseriti qui -->
+</div>
+
+<script>
+    let allData = [];
+    let filteredData = [];
+    let currentPage = 1;
+    const rowsPerPage = 50; // Puoi cambiare questo valore
+
+    // Assicurati che questo nome corrisponda al nome del tuo file CSV sul server
+    // e che il file NON abbia una riga di intestazione.
+    const csvFilePath = 'csv/Classifica.csv';
+
+    const searchInput = document.getElementById('searchInput');
+    const tableBody = document.getElementById('leaderboardTable').getElementsByTagName('tbody')[0];
+    const paginationControls = document.getElementById('paginationControls');
+    const loader = document.getElementById('loader');
+
+    searchInput.addEventListener('input', handleSearch);
+
+    function showLoader(show) {
+        loader.style.display = show ? 'block' : 'none';
+    }
+
+    async function loadAndProcessCSV() {
+        showLoader(true);
+        try {
+            const response = await fetch(csvFilePath);
+            if (!response.ok) {
+                throw new Error(`Errore HTTP: ${response.status} - Impossibile trovare ${csvFilePath}. Assicurati che il file esista e sia nella stessa cartella del file HTML.`);
+            }
+            const csvText = await response.text();
+
+            allData = parseCSVData(csvText);
+            filteredData = [...allData];
+
+            if (allData.length > 0) {
+                displayTable();
+                setupPagination();
+            } else {
+                tableBody.innerHTML = '<tr><td colspan="4">Nessun dato valido trovato nel file CSV o il file è vuoto.</td></tr>';
+            }
+
+        } catch (error) {
+            console.error("Errore durante il caricamento o il parsing del CSV:", error);
+            tableBody.innerHTML = `<tr><td colspan="4">Errore nel caricamento dei dati della classifica: ${error.message}</td></tr>`;
+        } finally {
+            showLoader(false);
+        }
+    }
+
+    function parseCSVData(csvText) {
+        const parsedData = [];
+        const lines = csvText.split(/\r?\n/); // Gestisce sia \n che \r\n
+
+        // I dati iniziano dalla prima riga (indice 0), non c'è intestazione da saltare
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i].trim();
+            if (line === "") continue; // Salta righe vuote
+
+            const cells = line.split(',');
+
+            // cells[0] = Team, cells[1] = Punti Partite, cells[2] = Punti Bonus, cells[3] = Posizione
+            // Controlla che ci siano abbastanza celle e che la posizione (quarta colonna, cells[3]) sia valida
+            if (cells.length >= 4 && cells[3] && cells[3].trim() !== "" && !isNaN(parseInt(cells[3].trim()))) {
+                const teamName = cells[0] ? cells[0].trim() : 'N/D';
+                const puntiPartite = cells[1] ? parseInt(cells[1].trim()) : 0; // Se vuoto o non numero, diventa 0
+                const puntiBonus = cells[2] ? parseInt(cells[2].trim()) : 0;   // Se vuoto o non numero, diventa 0
+                const posizione = parseInt(cells[3].trim());
+
+                parsedData.push({
+                    team: teamName,
+                    puntiPartite: isNaN(puntiPartite) ? 0 : puntiPartite,
+                    puntiBonus: isNaN(puntiBonus) ? 0 : puntiBonus,
+                    posizione: posizione
+                });
+            }
+        }
+        return parsedData;
+    }
+
+    function handleSearch() {
+        const searchTerm = searchInput.value.toLowerCase();
+        filteredData = allData.filter(item =>
+            item.team.toLowerCase().includes(searchTerm)
+        );
+        currentPage = 1; // Resetta alla prima pagina dopo la ricerca
+        displayTable();
+        setupPagination();
+    }
+
+    function displayTable() {
+        tableBody.innerHTML = ''; // Pulisci le righe esistenti
+
+        if (filteredData.length === 0) {
+            tableBody.innerHTML = '<tr><td colspan="4">Nessun risultato trovato.</td></tr>';
+            return;
+        }
+
+        const startIndex = (currentPage - 1) * rowsPerPage;
+        const endIndex = startIndex + rowsPerPage;
+        const paginatedItems = filteredData.slice(startIndex, endIndex);
+
+        paginatedItems.forEach(item => {
+            const row = tableBody.insertRow();
+            row.insertCell().textContent = item.posizione;
+            row.insertCell().textContent = item.team;
+            row.insertCell().textContent = item.puntiPartite;
+            row.insertCell().textContent = item.puntiBonus;
+        });
+    }
+
+    function setupPagination() {
+        paginationControls.innerHTML = '';
+        const pageCount = Math.ceil(filteredData.length / rowsPerPage);
+
+        if (pageCount <= 1) return; // Non mostrare paginazione se c'è solo una pagina o meno
+
+        // Bottone "Precedente"
+        const prevButton = document.createElement('button');
+        prevButton.textContent = 'Precedente';
+        prevButton.disabled = currentPage === 1;
+        prevButton.addEventListener('click', () => {
+            if (currentPage > 1) changePage(currentPage - 1);
+        });
+        paginationControls.appendChild(prevButton);
+
+        // Logica per visualizzare un numero limitato di bottoni di pagina
+        const maxPageButtons = 7;
+        let startPage, endPage;
+
+        if (pageCount <= maxPageButtons) {
+            startPage = 1;
+            endPage = pageCount;
+        } else {
+            const maxPagesBeforeCurrentPage = Math.floor(maxPageButtons / 2);
+            const maxPagesAfterCurrentPage = Math.ceil(maxPageButtons / 2) - 1;
+            if (currentPage <= maxPagesBeforeCurrentPage) {
+                startPage = 1;
+                endPage = maxPageButtons;
+            } else if (currentPage + maxPagesAfterCurrentPage >= pageCount) {
+                startPage = pageCount - maxPageButtons + 1;
+                endPage = pageCount;
+            } else {
+                startPage = currentPage - maxPagesBeforeCurrentPage;
+                endPage = currentPage + maxPagesAfterCurrentPage;
+            }
+        }
+
+        if (startPage > 1) {
+            const firstButton = document.createElement('button');
+            firstButton.textContent = '1';
+            firstButton.addEventListener('click', () => changePage(1));
+            paginationControls.appendChild(firstButton);
+            if (startPage > 2) {
+                const ellipsis = document.createElement('span');
+                ellipsis.textContent = ' ... ';
+                paginationControls.appendChild(ellipsis);
+            }
+        }
+
+        for (let i = startPage; i <= endPage; i++) {
+            const button = document.createElement('button');
+            button.textContent = i;
+            if (i === currentPage) {
+                button.classList.add('active');
+            }
+            button.addEventListener('click', () => changePage(i));
+            paginationControls.appendChild(button);
+        }
+
+        if (endPage < pageCount) {
+            if (endPage < pageCount - 1) {
+                const ellipsis = document.createElement('span');
+                ellipsis.textContent = ' ... ';
+                paginationControls.appendChild(ellipsis);
+            }
+            const lastButton = document.createElement('button');
+            lastButton.textContent = pageCount;
+            lastButton.addEventListener('click', () => changePage(pageCount));
+            paginationControls.appendChild(lastButton);
+        }
+
+        // Bottone "Successivo"
+        const nextButton = document.createElement('button');
+        nextButton.textContent = 'Successivo';
+        nextButton.disabled = currentPage === pageCount;
+        nextButton.addEventListener('click', () => {
+            if (currentPage < pageCount) changePage(currentPage + 1);
+        });
+        paginationControls.appendChild(nextButton);
+    }
+
+    function changePage(page) {
+        currentPage = page;
+        displayTable();
+        setupPagination();
+        window.scrollTo(0, 0); // Torna all'inizio della pagina quando si cambia pagina
+    }
+
+    // Carica i dati quando il DOM è pronto
+    document.addEventListener('DOMContentLoaded', loadAndProcessCSV);
+
+</script>
+
+</body>
+</html>
