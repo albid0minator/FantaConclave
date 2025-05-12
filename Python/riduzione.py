@@ -51,5 +51,5 @@ def seleziona_colonne_specifiche(input_csv_file, output_csv_filename="output_col
         print(f"Si è verificato un errore: {e}")
 
 if __name__ == "__main__":
-    input_file = "852.csv"
+    input_file = "daridurreà.csv"
     seleziona_colonne_specifiche(input_file)
